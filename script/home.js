@@ -15,7 +15,6 @@ function showDivs(n) {
   var x = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
   var slideShowa = document.getElementById("ml-slide");
-
   if (n > x.length) {
     slideIndex = 1;
   }
@@ -27,6 +26,7 @@ function showDivs(n) {
   }
   var marginL = -(slideIndex - 1) * 100;
   slideShowa.style.marginLeft = `${marginL}` + "vw";
+
   if (dots[slideIndex - 1]) {
     dots[slideIndex - 1].className += " active";
   }
