@@ -61,6 +61,7 @@ body {
   font-weight: 500;
   height: 0;
   z-index: 1;
+  visibility: hidden;
   transition: var(--transition-time) ease;
   cursor: pointer;
 }
@@ -128,18 +129,22 @@ body {
   text-align: center;
   z-index: 1;
   font-weight: 600;
+  font-size: 18px;
 }
 .right-contain-item-price {
   text-align: center;
   z-index: 1;
   color: red;
   font-weight: 600;
+  font-size: 18px;
 }
 .right-contain-item:hover .right-contain-item-image-small-item {
   height: 50px;
 }
 .right-contain-item:hover .right-contain-item-icon-buy {
   height: 45px;
+  visibility: visible;
+
 }
 .right-contain-item:hover .right-contain-item-icon-search {
   width: 50px;
