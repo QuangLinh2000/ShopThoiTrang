@@ -53,3 +53,25 @@ function scrollHideNav() {
     header.classList.remove("header-scroll-active");
   }
 }
+
+//==========================hover image dom===========================//
+var listImageHover = document.querySelectorAll(".img-item-hov");
+listImageHover.forEach((element) => {
+  element.addEventListener("mouseover", () => {
+    element
+      .closest(".slide-colection")
+      .querySelector(".colection-slide-image").src = element.src;
+  });
+});
+
+//==========================slider production===========================//
+var listNextBtn = document.querySelectorAll(".next-btn");
+var listPrevBtn = document.querySelectorAll(".prev-btn");
+listNextBtn.forEach((element) => {
+  element.addEventListener("click", () => {
+    console.log(
+      element.closest(".colection-slide").querySelector(".slideshow-colection")
+        .style.transform
+    );
+  });
+});

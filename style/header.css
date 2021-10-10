@@ -1,3 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  /* font  */
+  --font-body: "Quicksand", sans-serif;
+  --font-nav: "Taviraj", serif;
+
+  /* color */
+  --text-color: #000000;
+  --text-color-light: #181818;
+  --text-color-red: #e82d2d;
+  --subtitle-color: #c3c0bc;
+  --text-color-white: #fff;
+  --container-color: #e5e5e5;
+  --color-icon: #6c6969;
+  /* Font size */
+  --big-font-size: 30px;
+  --h2-font-size: 24px;
+  --h3-font-size: 16px;
+  --normal-font-size: 14px;
+  --small-font-size: 12px;
+
+  /* z-index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+  /* *font weight: */
+  --font-medium: 500;
+  --font-bold: 600;
+  --font-weight-b: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+/*===== BASE =====*/
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  background-color: transparent;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+}
+
 .header-top-all {
   padding: 5px;
   background-color: #000;
