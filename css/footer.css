@@ -1,0 +1,100 @@
+/* -------------------------footer --------------------------------*/
+footer {
+    background-color: rgb(229, 229, 229);
+  }
+  .footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-top img {
+    margin-top: 40px;
+  
+    width: 250px;
+    height: 56px;
+  }
+  .footer-content {
+    margin-top: 40px;
+    display: flex;
+    border-bottom: solid black 1px;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+  }
+  .footer-content-item {
+    flex: 1;
+  }
+  .footer-content-item-title {
+    font-weight: bold;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .footer-content-item-contact {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .footer-content-item-contact-item {
+    display: flex;
+  }
+  .footer-content-item-contact-item p {
+    margin: 17px;
+  
+    margin-left: 20px;
+  }
+  .footer-content-item-contact-item i {
+    margin-top: 20px;
+  }
+  .footer-content-item-rigeter {
+    margin-right: 20px;
+  }
+  .footer-content-item-input {
+      margin-top: 20px;
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    position: relative;
+    padding-left: 10px;
+  }
+  .footer-content-item-input i {
+    background-color: black;
+    width: 50px;
+    height: 40px;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    padding-top: 10px;
+  }
+  #footer-content-item-input-email {
+    width: 100%;
+    height: 40px;
+    outline: none;
+  }
+  .footer-content-item-image img {
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+  }
+  .footer-content-item-focuse {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  .footer-content-item-focuse::after {
+    content: "";
+    width: 0;
+    background-color: black;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .footer-content-item-focuse:hover::after {
+    width: 100%;
+  }

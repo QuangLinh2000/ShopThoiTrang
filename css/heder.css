@@ -16,7 +16,6 @@
   /* Font size */
   --big-font-size: 30px;
   --h2-font-size: 24px;
-  --h3-font-size: 16px;
   --normal-font-size: 14px;
   --small-font-size: 12px;
 
@@ -68,7 +67,9 @@ body {
   color: var(--text-color);
   font-size: var(--normal-font-size);
 }
-
+/* ===============================================button======================================*/
+.btn {
+}
 /* ==============================================text-hover ===================================*/
 .text-hover {
   position: relative;
@@ -163,6 +164,7 @@ body {
   border-radius: 20px;
   font-size: 12px;
   overflow-y: auto;
+  /* height: 40px; */
 }
 .header-search .input-search {
   border: none;
@@ -176,7 +178,7 @@ body {
   font-size: 18px;
   padding: 5px;
   margin-right: 10px;
-  color: #4c4b4b;
+  color: #6c6969;
 }
 
 .header-top {
@@ -185,13 +187,11 @@ body {
   align-content: center;
   padding: 15px 0px;
 }
-#header-first .header-top-list {
-  width: 350px;
-}
 .header-top-list {
   display: flex;
   align-items: center;
   font-size: 12px;
+  width: 350px;
   justify-content: flex-end;
 }
 .header-top-wrap-logo {
@@ -201,7 +201,7 @@ body {
   color: var(--text-color-red);
 }
 .header-top-list div {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .nav-bar {
@@ -212,7 +212,6 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  flex-wrap: wrap;
 }
 .nav-item {
   padding: 10px 0px;
@@ -235,8 +234,6 @@ body {
   visibility: visible;
   top: 40px;
   transition: 0.4s ease-in-out;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 .list-sub .item-sub-nav {
   padding: 10px;
@@ -256,35 +253,4 @@ body {
 }
 .nav-item a {
   font-family: var(--font-nav);
-}
-
-/* =================================header scroll================================= */
-#header-scroll {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: var(--z-fixed);
-  background-color: white;
-  transition: all 0.3s ease;
-  border-bottom: 1px solid var(--container-color);
-}
-#header-scroll.header-scroll-active {
-  display: block;
-  animation: slide-down 0.5s;
-}
-#header-scroll .header-top-list {
-  width: none;
-}
-
-@keyframes slide-down {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
