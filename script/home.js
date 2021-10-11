@@ -37,10 +37,8 @@ window.onload = function (e) {
   }, 10000);
 };
 
-
-
 //==========================hover image dom===========================//
-var listImageHover = document.querySelectorAll(".img-item-hov");
+const listImageHover = document.querySelectorAll(".img-item-hov");
 listImageHover.forEach((element) => {
   element.addEventListener("mouseover", () => {
     element
@@ -50,13 +48,41 @@ listImageHover.forEach((element) => {
 });
 
 //==========================slider production===========================//
-var listNextBtn = document.querySelectorAll(".next-btn");
-var listPrevBtn = document.querySelectorAll(".prev-btn");
+const listNextBtn = document.querySelectorAll(".next-btn");
+const listPrevBtn = document.querySelectorAll(".prev-btn");
+const listSlideshowCollection = document.querySelectorAll(
+  ".slideshow-colection"
+);
+listSlideshowCollection.forEach((element) => {
+  element.style.transform = "translateX(0%)";
+});
+
 listNextBtn.forEach((element) => {
   element.addEventListener("click", () => {
-    console.log(
-      element.closest(".colection-slide").querySelector(".slideshow-colection")
-        .style.transform
-    );
+    let parentE = element
+      .closest(".colection-slide")
+      .querySelector(".slideshow-colection");
+    let count = parentE.querySelectorAll(".slide-colection").length;
+    let percentBefore = parentE.style.transform.replace(/[^-?\d.]/g, "");
+    percentBefore = parseInt(percentBefore, 10) - 50;
+    if (percentBefore < -(count - 2) * 50) {
+      percentBefore = 0;
+    }
+    parentE.style.transform = `translateX(${percentBefore}%)`;
+  });
+});
+listPrevBtn.forEach((element) => {
+  element.addEventListener("click", () => {
+    let parentE = element
+      .closest(".colection-slide")
+      .querySelector(".slideshow-colection");
+    let count = parentE.querySelectorAll(".slide-colection").length;
+    let percentBefore = parentE.style.transform.replace(/[^-?\d.]/g, "");
+    percentBefore = parseInt(percentBefore, 10) + 50;
+    if (percentBefore > 0) {
+      percentBefore = -(count - 2) * 50;
+      console.log(percentBefore);
+    }
+    parentE.style.transform = `translateX(${percentBefore}%)`;
   });
 });

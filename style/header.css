@@ -69,6 +69,68 @@ body {
   font-size: var(--normal-font-size);
 }
 
+/* ==============================================text-hover ===================================*/
+.text-hover {
+  position: relative;
+  text-decoration: none;
+}
+.text-hover:after,
+.text-hover:before {
+  transition: 00.4s;
+}
+
+.text-hover:hover,
+.text-hover:focus {
+  outline: 0;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.4s ease-in-out;
+}
+.text-hover:hover:after,
+.text-hover:focus:after {
+  background-color: var(--text-color);
+}
+
+.text-hover:hover:after,
+.text-hover:focus:after,
+.text-hover:hover:before,
+.text-hover:focus:before {
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+/* text-hover-underline-goes */
+.text-hover-underline-goes-right:after {
+  content: "";
+  position: absolute;
+  transition-property: width;
+  width: 0;
+  height: 1px;
+  transition: 0.4s;
+}
+.text-hover-underline-goes-right:hover:after,
+.text-hover-underline-goes-right:focus:after {
+  outline: 0;
+  transition-property: width;
+  width: 100%;
+}
+.text-hover-underline-goes-right:after {
+  left: 0;
+  bottom: 0;
+}
+.text-hover.active {
+  color: var(--text-color);
+}
+.text-hover.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--text-color);
+}
+
 .header-top-all {
   padding: 5px;
   background-color: #000;
