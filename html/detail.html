@@ -61,7 +61,69 @@
             </div>
         </div>
     </section>
-
+    <!-- code html cho form thêm hàng -->
+    <div class="form">
+        <div class="form__content">
+            <div class="delete-form" onclick="activeForm()">
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="form__title"><h3>Giỏ hàng của bạn (Đang có 1 sản phẩm)</h3></div>
+            <div class="form__table">
+                <table>
+                    <thead>
+                        <th></th>
+                        <th>Sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th></th>
+    
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table__image-decription"><a href=""><img src="../img/321691492193020636/1.jpg" alt=""></a></td>
+                            <td class="table__infor-decription ">	
+                                <a href="" class="bold-text"><h5>ĐẦM TIỆC HỒNG PHỐI SEQUIN D32169</h5></a> <br>
+                               <span>Phiên bản: Size 6 / Hồng </span><br>
+                               <span>Thương hiệu: NEM</span> </td>
+                            <td class="table__price-bill bold-text">1,493,000₫</td>
+                            <td class="table__amount"><input type="text" placeholder="1"></td>
+                            <td class="table__price bold-text">1,493,000₫</td>
+                            <td class="table__delete-element"><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="table__image-decription"><a href=""><img src="../img/321691492193020636/1.jpg" alt=""></a></td>
+                            <td class="table__infor-decription ">	
+                                <a href="" class="bold-text"><h5>ĐẦM TIỆC HỒNG PHỐI SEQUIN D32169</h5></a> <br>
+                               <span>Phiên bản: Size 6 / Hồng </span><br>
+                               <span>Thương hiệu: NEM</span> </td>
+                            <td class="table__price-bill bold-text">1,493,000₫</td>
+                            <td class="table__amount"><input type="text" placeholder="1"></td>
+                            <td class="table__price bold-text">1,493,000₫</td>
+                            <td class="table__delete-element"><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+            <div class="form__footer">
+                <div class="form__footer__left">
+                    <textarea name="" class="footer__note" cols="30" rows="5" placeholder="Ghi chú"></textarea>
+                    <a href="" class="return-shop">
+                        <i class="fas fa-reply"></i>
+                        Tiếp tục mua hàng
+                    </a>
+                </div>
+                <div class="form__footer__right">
+                    <div class="summary-price"><h3>TỔNG: 2,986,000₫</h3></div>
+                    <div class="save-price">Tiết kiệm: 899,000₫</div>
+                    <button class="update-cart" >CẬP NHẬT GIỎ HÀNG</button>
+                    
+                    <a href="" class="pay-button">TIẾN HÀNH THANH TOÁN</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         var product={title: 'Đầm tiệc hồng phối sequin D32169', trademark:'Thương Hiệu: NEM',
         productID:'321691492193020636',price:1493000,sale:20,available:5, Productsize:[size1={size:'Size 6',status:'off'},size1={size:'Size 8',status:'on'},size3={size:'Size 10',status:'on'}]
@@ -386,10 +448,10 @@
 
             </div>
             <div class="add-cart text-center">
-                    <button >THÊM VÀO GIỎ</button>
+                    <button class="add-cart__button" onclick="activeForm()">THÊM VÀO GIỎ</button>
                 </div>
                 <div class="buy-now text-center">
-                    <button>MUA NGAY</button>
+                    <button class="buy-now__button">MUA NGAY</button>
                 </div>`
         }
         else {
@@ -527,7 +589,23 @@
         imageZoom();
     
 
+    function activeForm(){
+        let form=document.querySelector(".form")
 
+        if(form.classList.contains("action-flex")) {
+            form.firstElementChild.style.animation="modalFadeOut ease 0.4s"
+            setTimeout(function() {
+                form.classList.remove("action-flex")
+            },400)
+           
+    }
+  else{
+   form.firstElementChild.style.animation="modalFadeIn  ease-in 0.4s"
+    form.classList.add("action-flex")
+
+
+  }  
+}
 
     </script>
 </body>
