@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Product</title>
+    <link rel="stylesheet" href="/css/detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onresize="resizeWindow()">
+    <section class="detail">
+        <div class="detail__image">
+            <div id="image__left">
+                <ul class="image__left__list">
+                   
+                </ul>
+                <div class="up text-center" onclick="changeImage(-1)"><i class="fas fa-angle-up"></i></div>
+                <div class="down text-center" onclick="changeImage(1)"><i class="fas fa-angle-down"></i></div>
+            </div>
+            <div id="image__right">
+                <div id="image__right__element"></div>
+            </div>
+        </div>
+        <div class="detail__infor">
+ 
+        </div>
+
+    </section>
+    <section class="related-product">
+        <div class="wrap">
+            <div class="wrap__header">
+                <h2 class="text-center">SẢN PHẨM TƯƠNG TỰ</h2>
+            </div>
+            <div class="wrap__content">
+
+                <ul class="wrap__list">
+
+                    <div class="wrap__list__box">
+
+                    </div>
+                    <div class="wrap-left-slide text-center" onclick="transition(-1)"><i class="fas fa-angle-left"></i></div>
+                    <div class="wrap-right-slide text-center" onclick="transition(1)"><i class="fas fa-angle-right"></i></div>         
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- code html cho form thêm hàng -->
+    <div class="form">
+        <div class="form__content">
+            <div class="delete-form" onclick="activeForm()">
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="form__title"><h3>Giỏ hàng của bạn (Đang có 1 sản phẩm)</h3></div>
+            <div class="form__table">
+                <table>
+                    <thead>
+                        <th></th>
+                        <th>Sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th></th>
+    
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table__image-decription"><a href=""><img src="../img/321691492193020636/1.jpg" alt=""></a></td>
+                            <td class="table__infor-decription ">	
+                                <a href="" class="bold-text"><h5>ĐẦM TIỆC HỒNG PHỐI SEQUIN D32169</h5></a> <br>
+                               <span>Phiên bản: Size 6 / Hồng </span><br>
+                               <span>Thương hiệu: NEM</span> </td>
+                            <td class="table__price-bill bold-text">1,493,000₫</td>
+                            <td class="table__amount"><input type="text" placeholder="1"></td>
+                            <td class="table__price bold-text">1,493,000₫</td>
+                            <td class="table__delete-element"><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="table__image-decription"><a href=""><img src="../img/321691492193020636/1.jpg" alt=""></a></td>
+                            <td class="table__infor-decription ">	
+                                <a href="" class="bold-text"><h5>ĐẦM TIỆC HỒNG PHỐI SEQUIN D32169</h5></a> <br>
+                               <span>Phiên bản: Size 6 / Hồng </span><br>
+                               <span>Thương hiệu: NEM</span> </td>
+                            <td class="table__price-bill bold-text">1,493,000₫</td>
+                            <td class="table__amount"><input type="text" placeholder="1"></td>
+                            <td class="table__price bold-text">1,493,000₫</td>
+                            <td class="table__delete-element"><i class="fas fa-trash-alt"></i></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+            <div class="form__footer">
+                <div class="form__footer__left">
+                    <textarea name="" class="footer__note" cols="30" rows="5" placeholder="Ghi chú"></textarea>
+                    <a href="" class="return-shop">
+                        <i class="fas fa-reply"></i>
+                        Tiếp tục mua hàng
+                    </a>
+                </div>
+                <div class="form__footer__right">
+                    <div class="summary-price"><h3>TỔNG: 2,986,000₫</h3></div>
+                    <div class="save-price">Tiết kiệm: 899,000₫</div>
+                    <button class="update-cart" >CẬP NHẬT GIỎ HÀNG</button>
+                    
+                    <a href="" class="pay-button">TIẾN HÀNH THANH TOÁN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/script/detail.js"></script>
+
+</body>
+
+</html>
