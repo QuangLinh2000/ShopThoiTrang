@@ -35,9 +35,9 @@ window.onload = function (e) {
   setInterval(() => {
     showDivs(slideIndex++);
   }, 10000);
-  //   setInterval(() => {
-  //     showSlide(++indexSlider);
-  //   }, 6000);
+  setInterval(() => {
+    showSlide(++indexSlider);
+  }, 6000);
 };
 
 //==========================hover image dom===========================//
@@ -116,4 +116,32 @@ function showSlide(n) {
   let percent = -(indexSlider - 1) * 33.33;
   sectionContent.style.transform = `translateX(${percent}%)`;
   listSlider[indexSlider].className = "slides-item slide-active";
+}
+
+//==========================tab-links===========================//
+const arrTabLink = document.querySelectorAll(".tablinks");
+const listTab1 = document.getElementById("list-tab1");
+const listTab2 = document.getElementById("list-tab2");
+const listTab3 = document.getElementById("list-tab3");
+listTab1.className = "active";
+for (let index = 0; index < arrTabLink.length; index++) {
+  arrTabLink[index].addEventListener("click", () => {
+    arrTabLink.forEach((element) => {
+      element.classList.remove("active");
+    });
+    arrTabLink[index].classList.add("active");
+    listTab1.className = "";
+    listTab2.className = "";
+    listTab3.className = "";
+
+    if (index === 0) {
+      listTab1.className = "active";
+    }
+    if (index === 1) {
+      listTab2.className = "active";
+    }
+    if (index === 2) {
+      listTab3.className = "active";
+    }
+  });
 }

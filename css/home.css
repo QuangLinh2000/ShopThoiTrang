@@ -180,7 +180,7 @@
 }
 .collection-slide-div {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .btn-img {
@@ -299,6 +299,15 @@
   color: var(--text-color-red);
   font-weight: var(--font-medium);
 }
+.current-price {
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: var(--font-nav);
+  font-weight: var(--font-medium);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  color: #999999;
+}
 .title-section {
   font-size: var(--h2-font-size);
   font-weight: var(--font-medium);
@@ -396,4 +405,100 @@
 }
 #section-slider {
   margin: 50px 0;
+}
+.colection-tag {
+  width: 65px;
+  position: absolute;
+  top: -7px;
+  right: -24px;
+  z-index: 9999;
+}
+.tag-saleoff span {
+  position: absolute;
+  color: white;
+  padding: 5px 10px;
+  transform: rotate(45deg);
+  top: 16px;
+  left: 13px;
+}
+
+/* center */
+.fixed-bg {
+  background-image: url("../img/background-attachment.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 410px;
+  background-attachment: fixed;
+  background-position: top;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-more-white1 {
+  display: inline-block !important;
+  padding: 16px 45px;
+  border: 4px solid #fff;
+  color: #ffffff;
+  border-radius: 2px;
+  font-size: 25px;
+  font-weight: 500;
+  background: #000000;
+  opacity: 0.7;
+}
+.btn-more-white1:hover {
+  opacity: 1;
+}
+
+/* ========================================tab-home==================================== */
+#tab-home {
+  padding: 50px 0;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.tablinks {
+  border: none;
+  outline: none;
+  padding: 0px;
+  cursor: pointer;
+  color: #000000;
+  font-size: 25px;
+  margin: 0px 40px 0px 0px;
+  border-bottom: 1px solid transparent;
+  font-weight: bold;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.tablinks.active {
+  opacity: 1;
+}
+.list-tab-content {
+  display: grid;
+  grid-column-gap: 20px;
+  /* grid-template-columns: repeat(auto-fill, 25%); */
+  grid-template-columns: repeat(4, 1fr);
+}
+.div-btn-tab {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.btn-tab {
+  margin-top: 0;
+}
+
+/* active tab */
+#list-tab1,
+#list-tab2,
+#list-tab3 {
+  display: none;
+}
+#list-tab1.active,
+#list-tab2.active,
+#list-tab3.active {
+  display: block;
 }
