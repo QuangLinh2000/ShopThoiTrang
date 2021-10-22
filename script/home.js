@@ -145,3 +145,18 @@ for (let index = 0; index < arrTabLink.length; index++) {
     }
   });
 }
+//customer active
+const listCustomerItem = document.querySelectorAll(".customer-item");
+listCustomerItem[2].classList.add("active");
+for (let index = 0; index < listCustomerItem.length; index++) {
+  if (index === 2) {
+    continue;
+  }
+  console.log(index);
+  listCustomerItem[index].addEventListener("mouseover", () => {
+    listCustomerItem[2].classList.remove("active");
+  });
+  listCustomerItem[index].addEventListener("mouseout", () => {
+    listCustomerItem[2].classList.add("active");
+  });
+}

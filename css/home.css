@@ -308,12 +308,21 @@
   text-decoration-thickness: 1px;
   color: #999999;
 }
-.title-section {
+
+.section-title {
   font-size: var(--h2-font-size);
   font-weight: var(--font-medium);
   font-family: var(--font-nav);
   margin: 15px 0;
+  text-align: center;
+}
+.margin-right-5 {
   margin-right: 5%;
+}
+.section-title-big {
+  color: #292929;
+  font-size: var(--big-font-size);
+  margin-bottom: 50px;
 }
 .subtile-section {
   margin: 0 0 15px 0;
@@ -394,15 +403,7 @@
   font-size: 25px;
   cursor: pointer;
 }
-.section-title {
-  font-weight: 600;
-  color: #292929;
-  font-size: var(--big-font-size);
-  margin: 15px 0;
-  text-align: center;
-  font-family: var(--font-nav);
-  margin-bottom: 50px;
-}
+
 #section-slider {
   margin: 50px 0;
 }
@@ -501,4 +502,101 @@
 #list-tab2.active,
 #list-tab3.active {
   display: block;
+}
+/* *customer */
+.customer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.customer-item {
+  position: relative;
+  overflow: hidden;
+}
+.customer-des {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  opacity: 0.7;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+.customer-des h3 {
+  font-size: var(--h3-font-size);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.customer-des span {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.customer-des p {
+  padding: 5px;
+  font-size: 12px;
+}
+.bg-color {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(41, 35, 35, 0.85);
+  opacity: 0.8;
+}
+
+.customer-item:hover {
+  transform: scale(1.15);
+  transition: 0.3s;
+  z-index: 2;
+}
+.customer-item:hover .bg-color {
+  opacity: 0;
+}
+.customer-item:hover .shine-hover::before {
+  animation: shine 0.6s;
+}
+.customer-item:hover .customer-des {
+  transform: translateY(0);
+  transition: transform 0.4s;
+}
+.customer-item {
+  transform: scale(1);
+  transition: 0.4s;
+}
+/* Shine */
+.shine-hover {
+  position: relative;
+}
+.shine-hover::before {
+  position: absolute;
+  top: 0;
+  left: -90%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-25deg);
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+.customer-item.active {
+  transform: scale(1.15);
+  z-index: 2;
+}
+.customer-item.active .customer-des {
+  transform: translateY(0);
+}
+.customer-item.active .bg-color {
+  opacity: 0;
 }

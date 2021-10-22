@@ -59,7 +59,7 @@ productID:'AK62546',price:1399000,sale:0,available:0, Productsize:[size1={size:'
                     image:['1.jpg']};
 // danh sách các sản phẩm liên quan
 var listRelatedProduct=[product0,product1,product2,product3,product4,product5];
-// thiết lập danh sách các hình ảnh mô tả của sản phẩm 
+// thiết lập danh sách các hình ảnh mô tả của sản phẩm
 function settingImageLeft(product){
     let imageListLeft=document.querySelector(".image__left__list")
     for (var i=0;i<product.image.length;i++){
@@ -84,7 +84,7 @@ else if(window.outerWidth>900){
 }
 else if(window.outerWidth>600) {
     numWrapSlide=2
-replaceClassWrap("wrap__element-large-phone") 
+replaceClassWrap("wrap__element-large-phone")
 }
 else {
    replaceClassWrap("wrap__element-mobile") ;
@@ -103,9 +103,9 @@ function settingRelatedProduct(listRelatedProduct,className){
         var related=listRelatedProduct[i]
         let wrapElement=document.createElement('li')
         wrapElement.className=className+"";
-        
-        
-        
+
+
+
         wrapElement.innerHTML=`<div class="wrap__element__image"> <img src="../img/${related.productID}/${related.image[0]}" alt="">
 
                     <div class="clear-fix">
@@ -120,7 +120,7 @@ function settingRelatedProduct(listRelatedProduct,className){
                     </div>
                     <div class="wrap__price text-center">
                         `+ checkSale(related)+`
-                           
+
                     </div>
                     <div class="wrap__sale-off text-center">
                         ${related.sale}%
@@ -139,12 +139,12 @@ settingRelatedProduct(listRelatedProduct,"wrap__element")
 
 // Kiểm tra xem sản phẩm liên quan có giảm giá hay không
 function checkSale(relatedProduct){
-if(relatedProduct.sale>0) return `<span class="curren-price">`+convertPrice(relatedProduct.price*relatedProduct.sale/100)+`₫ 
+if(relatedProduct.sale>0) return `<span class="curren-price">`+convertPrice(relatedProduct.price*relatedProduct.sale/100)+`₫
                         </span>
                         <span class="origin-price">
                             <s>`+convertPrice(relatedProduct.price)+`₫</s>
                         </span>`
-                        else return `<span class="curren-price">`+convertPrice(relatedProduct.price)+`₫ 
+                        else return `<span class="curren-price">`+convertPrice(relatedProduct.price)+`₫
                         </span>`;
 }
 // Kiểm tra có còn hàng hay không
@@ -172,16 +172,16 @@ var str="";
 if((priceCoppy-priceCoppy%1000000)/1000000>0){
     str=(priceCoppy-priceCoppy%1000000)/1000000+",";
     //chỉ lấy phần nguyên
-    priceCoppy=priceCoppy%1000000;  
-} 
+    priceCoppy=priceCoppy%1000000;
+}
 if((priceCoppy-priceCoppy%1000)/1000>0){
     str+=(priceCoppy-priceCoppy%1000)/1000+","
-    priceCoppy=priceCoppy%1000;  
+    priceCoppy=priceCoppy%1000;
 }
 else str+="000,";
 if((priceCoppy-priceCoppy%1)/1>0){
     str+=(priceCoppy-priceCoppy%1)/1;
-   
+
 }
 else str+="000";
 return str;
@@ -204,24 +204,24 @@ function createaE(product){
             <h1>${product.title}</h1>
         </div>
         <div class="product__trademark">
-            
+
             <span>${product.trademark}</span>
         </div>
         <div class="product__id">
-            
+
             <span>Mã SP: ${product.productID}</span>
         </div>
     </div>
     <div class="infor__body">
         <div class="product__price">
-          
+
         </div>
         <div class="product__size">
-            
+
 
         </div>
         <div class="product__color">
-            
+
 
         </div>
 
@@ -229,32 +229,32 @@ function createaE(product){
     </div>
     <div class="infor__footer">
         <div class="product__amount">
-            
+
         </div>
-       
+
     </div>
     <div class="decriptions">
 
     </div>`;
     //Thêm giá
-    
+
     let productPrice=document.querySelector(".product__price")
     if(product.sale>0){
         productPrice.innerHTML=` <span>`+convertPrice( product.price*product.sale/100) + `₫</span>
         <div class="product__price__sale"><s>`+convertPrice(product.price) +`₫</s> </div>
         <div class="product__percent__sale"> <span>${product.sale}%</span>
-            
+
             </div>
         `;
     }
     else productPrice.innerHTML=` <span>`+convertPrice(product.price) + `₫</span>`
 
 
-    
+
     //thêm kích thước, màu sắc , số lượng dựa theo số lượng hàng có sẵn tại shop
     if(product.available>0){
     let productSize=document.querySelector(".product__size")
-    
+
     let productSizeHeader=document.createElement('div')
     productSizeHeader.setAttribute('class','product__header')
     productSizeHeader.innerHTML='Kích thước'
@@ -278,21 +278,21 @@ function createaE(product){
         element.addEventListener('click',function (){
             let listSelectImage=document.querySelectorAll(".select-image")
             for(var i=0;i<listSelectImage.length;i++){
-                
+
                 listSelectImage[i].classList.remove("action")
             }
             element.lastElementChild.classList.toggle("action");
         })}
         productSizeElement.appendChild(element);
-        
-        
+
+
 
     }
-           
+
     productSizeList.appendChild(productSizeElement)
         productSize.appendChild(productSizeHeader)
         productSize.appendChild(productSizeList)
-     
+
     // thêm màu
     let productColor=document.querySelector(".product__color")
     let productColorHeader=document.createElement('div')
@@ -306,7 +306,7 @@ function createaE(product){
         let colorItem=document.createElement('div');
         colorItem.setAttribute('class','product__color__element');
 
-       
+
         colorItem.style.backgroundColor=variable.idColor;
         productColorElements.appendChild(colorItem)
     }
@@ -320,10 +320,10 @@ function createaE(product){
     <div class="product__amount">
     <div class="product__header">Số lượng</div>
             <div class="product__amount__form">
-                <button class="decrease" onclick='changeAmount(-1)''><i class="fas fa-chevron-left"></i></button> 
+                <button class="decrease" onclick='changeAmount(-1)''><i class="fas fa-chevron-left"></i></button>
                 <label class="amount-num text-center">${amount}</label>
-               
-                <button class="increase" onclick='changeAmount(1)'><i class="fas fa-chevron-right"></i></button> 
+
+                <button class="increase" onclick='changeAmount(1)'><i class="fas fa-chevron-right"></i></button>
             </div>
 
     </div>
@@ -343,12 +343,12 @@ else {
 }
     //thêm mô tả
     let decriptionsContent=document.querySelector('.decriptions')
-    
+
     decriptionsContent.innerHTML=`
-    <span><strong>Chất Liệu: </strong> ${product.material}</span> 
-    <span><strong>Kiểu Dáng: </strong> ${product.type} </span>  
-    <span><strong>Phù Hợp: </strong>${product.match}</span> 
-    <span><strong>Sản phẩm thuộc dòng sản phẩm: </strong>${product.producBranch}</span> 
+    <span><strong>Chất Liệu: </strong> ${product.material}</span>
+    <span><strong>Kiểu Dáng: </strong> ${product.type} </span>
+    <span><strong>Phù Hợp: </strong>${product.match}</span>
+    <span><strong>Sản phẩm thuộc dòng sản phẩm: </strong>${product.producBranch}</span>
     <span> <strong>Thông tin người mẫu: </strong>${product.model}</span> `;
 
 }
@@ -362,18 +362,18 @@ lens=document.createElement('div');
     result.setAttribute('class','img-zoom-result')
     mainImgTag.appendChild(result);
 list=document.getElementsByClassName("image__left__element");
- // Thêm sự kiện vào list ảnh   
+ // Thêm sự kiện vào list ảnh
     for(var j=0; j<list.length;j++){
         var item=list[j];
         item.onclick=function(){
             leftToRightSupport(this.outerHTML);// chuyển ảnh sang phải
-    
+
             imageZoom() // load lại result
-         
+
         };
 
-    } 
-    
+    }
+
 
 
 
@@ -384,7 +384,7 @@ leftToRightSupport('<img class="image__right__element" src="../img/3216914921930
 
     // nhấn ảnh bên trái thì bên phải đổi ảnh
 
-function changeImage(index1){  
+function changeImage(index1){
     showList(indexOfImage += index1);
 }
 // sự kiện pull up(down) trong danh sách ảnh
@@ -413,11 +413,11 @@ function imageZoom() {
 
     cy = 3;
     mainImg=mainImgTag.firstElementChild.firstChild;
-    
+
     result.style.backgroundImage="url('" + mainImg.src + "')";
-   
+
     result.style.backgroundSize = (mainImg.width * cx) + "px " + (mainImg.height * cy) + "px";
-  
+
       /*execute a function when someone moves the cursor over the image, or the lens:*/
     lens.addEventListener("mousemove", moveLens);
     mainImg.addEventListener("mousemove", moveLens);
@@ -435,7 +435,7 @@ e.preventDefault();
 pos = getCursorPos(e);
 /*calculate the position of the lens:*/
 x = pos.x - (lens.offsetWidth / 2);
-    
+
 
 y = pos.y - (lens.offsetHeight / 2);
 
@@ -477,13 +477,12 @@ if(form.classList.contains("action-flex")) {
     setTimeout(function() {
         form.classList.remove("action-flex")
     },400)
-   
+
 }
 else{
 form.firstElementChild.style.animation="modalFadeIn  ease-in 0.4s"
 form.classList.add("action-flex")
 
 
-}  
 }
-
+}
