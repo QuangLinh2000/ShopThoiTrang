@@ -1,4 +1,9 @@
-/* =========================text hover=========================   */
+/* ============================================flex center =====================================*/
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* ==============================================text-hover ===================================*/
 .text-hover {
   position: relative;
@@ -315,6 +320,7 @@
   font-family: var(--font-nav);
   margin: 15px 0;
   text-align: center;
+  text-transform: uppercase;
 }
 .margin-right-5 {
   margin-right: 5%;
@@ -504,6 +510,12 @@
   display: block;
 }
 /* *customer */
+#home-customer .section-title {
+  padding-bottom: 30px;
+}
+#home-customer {
+  padding-bottom: 80px;
+}
 .customer-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -599,4 +611,90 @@
 }
 .customer-item.active .bg-color {
   opacity: 0;
+}
+/* acticle */
+#home-blog {
+  margin-bottom: 50px;
+}
+#home-blog .article-item-left {
+  position: relative;
+}
+#home-blog .article-item-left .article-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.grid-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.article-item-left {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.article-item-right {
+  grid-column: span 1;
+  grid-row: span 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+#home-blog .article-info {
+  transform: translateY(0);
+  bottom: 1px;
+  width: 100%;
+  background: #000;
+  opacity: 0.7;
+  padding: 15px 30px;
+  color: var(--text-color-white);
+}
+#home-blog .article-info a {
+  color: var(--text-color-white);
+  font-size: 18px;
+  font-weight: bold;
+}
+#home-blog .article-date,
+#home-blog .article-comment {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+#home-blog .article-title a {
+  display: block;
+}
+#home-blog .article-date1,
+#home-blog .article-comment1 {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  margin-right: 15px;
+}
+#home-blog .article-item-right .article-title {
+  font-size: 16px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+#home-blog .article-item-right .article-desc1 {
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#home-blog .article-item-right .btn-blog {
+  margin-top: 15px;
 }
