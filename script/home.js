@@ -160,11 +160,3 @@ for (let index = 0; index < listCustomerItem.length; index++) {
     listCustomerItem[2].classList.add("active");
   });
 }
-var arrayTest = [1, 2, 3, 4, 5, 6];
-const shuffleCard = () => {
-  const shuffledCard = [...arrayTest, ...arrayTest].sort(() => -1);
-  arrayTest = shuffledCard;
-};
-
-shuffleCard();
-console.log(arrayTest);
