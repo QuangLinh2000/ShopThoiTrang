@@ -213,6 +213,7 @@ body {
   justify-content: center;
   position: relative;
   flex-wrap: wrap;
+  padding: 0 100px;
 }
 .nav-item {
   padding: 10px 0px;
