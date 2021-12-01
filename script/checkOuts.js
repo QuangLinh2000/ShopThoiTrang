@@ -34,6 +34,8 @@ valueTinhThanhPho = sel.options[sel.selectedIndex].text;
  });
 }
 
+
+
 function clickQuanHuyen(el) {
     valueQuanHUyen = el.options[el.selectedIndex].text;
    
