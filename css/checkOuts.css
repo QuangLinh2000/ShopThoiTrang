@@ -194,6 +194,7 @@
   }
 
 .item-content-right{
+    position: relative;
     margin-left: 20px;
     display: flex;
     justify-content: center;
@@ -268,4 +269,14 @@
 }
 .title-top-end{
     margin-right: 50px;
+}
+/* ------------ */
+.item-content-right .fa-xmark{
+ position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    
 }
