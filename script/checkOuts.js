@@ -32,6 +32,8 @@ function clickTinhThanhPho(sel) {
   });
 }
 
+
+
 function clickQuanHuyen(el) {
   valueQuanHUyen = el.options[el.selectedIndex].text;
 
