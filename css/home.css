@@ -420,8 +420,8 @@
   width: 65px;
   position: absolute;
   top: -7px;
-  right: -24px;
-  z-index: 9999;
+  right: -10px;
+  z-index: 9;
 }
 .tag-saleoff span {
   position: absolute;

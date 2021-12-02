@@ -11,11 +11,11 @@
 
     <link rel="stylesheet" href="../css/header.css">
     <!-- <link rel="stylesheet" href="../style/home.css"> -->
-    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/search.css">
     <!-- <script src="../script/home.js"></script> -->
     <link rel="stylesheet" href="../css/footer.css">
 
-
+</head>
 <body>
     <header id="header">
         <div id="header-first">
@@ -402,267 +402,424 @@
     <a href="#" class="scrollup show-scroll" id="scroll-up">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
-    <div class="container">
-        <section class="contain">
-            <div class="left-contain">
-                <div class="left-contain-price-range">
-                    <p class="left-contain-item-title">Khoảng Giá</p>
-                    <div class="left-contain-item-box-content">
-                        <input type="radio"  name="all" value="Tất Cả">
-                        <label for="all"> Tất Cả</label><br>
-                        <input type="radio"  name="all" value="Tất Cả">
-                        <label for="all"> Nhỏ hơn 300,000₫</label><br>
-                        <input type="radio"  name="all" value="Tất Cả">
-                        <label for="all">Từ 300,000₫ - 500,000₫</label><br>
-                        <input type="radio"  name="all" value="Tất Cả">
-                        <label for="all"> Từ 500,000₫ - 700,000₫</label><br>
-                        <input type="radio"  name="all" value="Tất Cả">
-                        <label for="all"> Từ 700,000₫ - 1,000,000₫</label><br>
-                        <input type="radio"  name="all" value="Tất Cả">
-                        <label for="all"> Từ 1,000,000₫ - 1,500,000₫</label><br>
-                        <input type="radio"  name="all" value="Tất Cả">
-                        <label for="all">  Lớn hơn 1,500,000₫</label><br>
+    <section id="main-search">
+        <div class="container">
+            <div class="top-search-title">
+                <h2 class="text-search">Áo</h2>
+                <span class="title-sum-product">415949 sản phẩm</span>
+            </div>
+            <div class="contain">
+                <div class="left-contain">
+                    <div class="left-contain-price-range">
+                        <p class="left-contain-item-title">Khoảng Giá</p>
+                        <div class="left-contain-item-box-content">
+                            <input type="radio" name="all" value="Tất Cả">
+                            <label for="all"> Tất Cả</label><br>
+                            <input type="radio" name="all" value="Tất Cả">
+                            <label for="all"> Nhỏ hơn 300,000₫</label><br>
+                            <input type="radio" name="all" value="Tất Cả">
+                            <label for="all">Từ 300,000₫ - 500,000₫</label><br>
+                            <input type="radio" name="all" value="Tất Cả">
+                            <label for="all"> Từ 500,000₫ - 700,000₫</label><br>
+                            <input type="radio" name="all" value="Tất Cả">
+                            <label for="all"> Từ 700,000₫ - 1,000,000₫</label><br>
+                            <input type="radio" name="all" value="Tất Cả">
+                            <label for="all"> Từ 1,000,000₫ - 1,500,000₫</label><br>
+                            <input type="radio" name="all" value="Tất Cả">
+                            <label for="all">  Lớn hơn 1,500,000₫</label><br>
+                        </div>
+                    </div>
+                    <div class="left-contain-size">
+                        <p class="left-contain-item-title">Kích Thước</p>
+                        <div class="left-contain-item-box-content-size">
+                            <div class="left-contain-item-box-content-size-item">
+                                <input type="checkbox" name="size" value="S">
+                                <label for="size">S</label><br>
+                            </div>
+                            <div class="left-contain-item-box-content-size-item">
+                                <input type="checkbox" name="size" value="M">
+                                <label for="size">M</label><br>
+                            </div>
+                            <div class="left-contain-item-box-content-size-item">
+                                <input type="checkbox" name="size" value="L">
+                                <label for="size">L</label><br>
+                            </div>
+                            <div class="left-contain-item-box-content-size-item">
+                                <input type="checkbox" name="size" value="XL">
+                                <label for="size">XL</label><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-contain-color">
+                        <p class="left-contain-item-title">Màu Sắc</p>
+                        <div class="left-contain-item-box-content-color">
+                            <div class="left-contain-item-box-content-color-item">
+                                <input type="checkbox" name="color" value="white">
+                                <p style="background-color: red;" for="color"></p><br>
+                            </div>
+                            <div class="left-contain-item-box-content-color-item">
+                                <input type="checkbox" name="color" value="white">
+                                <p style="background-color: yellow;" for="color"></p><br>
+                            </div>
+                            <div class="left-contain-item-box-content-color-item">
+                                <input type="checkbox" name="color" value="white">
+                                <p style="background-color: black;" for="color"></p><br>
+                            </div>
+                            <div class="left-contain-item-box-content-color-item">
+                                <input type="checkbox" name="color" value="white">
+                                <p style="background-color: greenyellow;" for="color"></p><br>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="left-contain-size">
-                    <p class="left-contain-item-title">Kích Thước</p>
-                    <div class="left-contain-item-box-content-size">
-                        <div class="left-contain-item-box-content-size-item">
-                            <input type="checkbox"  name="size" value="S">
-                            <label for="size">S</label><br>
+                <div class="right-contain">
+                    <div class="list-tab-content">
+                        <div class="slide-collection">
+                            <div class="collection-slide-div">
+                                <a href="#">
+                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                                </a>
+                                <div class="btn-img">
+                                    <div class="btn-img-search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="btn-img-buy">
+                                        <span>mua ngay</span>
+                                    </div>
+                                    <div class="btn-img-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                                <div class="colection-tag">
+                                    <div class="tag-saleoff">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                </div>
+                            </div>
+                            <div class="list-image-hover">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </div>
+                            <div class="text-content-collection">
+                                <h3 class="slide-collection-title">
+                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
+                                </h3>
+                                <div>
+                                    <span class="slide-collection-price">
+                                        847,000đ
+                                    </span>
+                                    <span class="current-price">
+                                        941,000đ
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="left-contain-item-box-content-size-item">
-                            <input type="checkbox"  name="size" value="M">
-                            <label for="size">M</label><br>
+                        <div class="slide-collection">
+                            <div class="collection-slide-div">
+                                <a href="#">
+                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                                </a>
+                                <div class="btn-img">
+                                    <div class="btn-img-search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="btn-img-buy">
+                                        <span>mua ngay</span>
+                                    </div>
+                                    <div class="btn-img-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                                <div class="colection-tag">
+                                    <div class="tag-saleoff">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                </div>
+                            </div>
+                            <div class="list-image-hover">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </div>
+                            <div class="text-content-collection">
+                                <h3 class="slide-collection-title">
+                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
+                                </h3>
+                                <div>
+                                    <span class="slide-collection-price">
+                                        847,000đ
+                                    </span>
+                                    <span class="current-price">
+                                        941,000đ
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="left-contain-item-box-content-size-item">
-                            <input type="checkbox"  name="size" value="L">
-                            <label for="size">L</label><br>
+                        <div class="slide-collection">
+                            <div class="collection-slide-div">
+                                <a href="#">
+                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                                </a>
+                                <div class="btn-img">
+                                    <div class="btn-img-search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="btn-img-buy">
+                                        <span>mua ngay</span>
+                                    </div>
+                                    <div class="btn-img-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                                <div class="colection-tag">
+                                    <div class="tag-saleoff">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                </div>
+                            </div>
+                            <div class="list-image-hover">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </div>
+                            <div class="text-content-collection">
+                                <h3 class="slide-collection-title">
+                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
+                                </h3>
+                                <div>
+                                    <span class="slide-collection-price">
+                                        847,000đ
+                                    </span>
+                                    <span class="current-price">
+                                        941,000đ
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="left-contain-item-box-content-size-item">
-                            <input type="checkbox"  name="size" value="XL">
-                            <label for="size">XL</label><br>
+                        <div class="slide-collection">
+                            <div class="collection-slide-div">
+                                <a href="#">
+                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                                </a>
+                                <div class="btn-img">
+                                    <div class="btn-img-search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="btn-img-buy">
+                                        <span>mua ngay</span>
+                                    </div>
+                                    <div class="btn-img-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                                <div class="colection-tag">
+                                    <div class="tag-saleoff">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                </div>
+                            </div>
+                            <div class="list-image-hover">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </div>
+                            <div class="text-content-collection">
+                                <h3 class="slide-collection-title">
+                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
+                                </h3>
+                                <div>
+                                    <span class="slide-collection-price">
+                                        847,000đ
+                                    </span>
+                                    <span class="current-price">
+                                        941,000đ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-collection">
+                            <div class="collection-slide-div">
+                                <a href="#">
+                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                                </a>
+                                <div class="btn-img">
+                                    <div class="btn-img-search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="btn-img-buy">
+                                        <span>mua ngay</span>
+                                    </div>
+                                    <div class="btn-img-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                                <div class="colection-tag">
+                                    <div class="tag-saleoff">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                </div>
+                            </div>
+                            <div class="list-image-hover">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </div>
+                            <div class="text-content-collection">
+                                <h3 class="slide-collection-title">
+                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
+                                </h3>
+                                <div>
+                                    <span class="slide-collection-price">
+                                        847,000đ
+                                    </span>
+                                    <span class="current-price">
+                                        941,000đ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-collection">
+                            <div class="collection-slide-div">
+                                <a href="#">
+                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                                </a>
+                                <div class="btn-img">
+                                    <div class="btn-img-search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="btn-img-buy">
+                                        <span>mua ngay</span>
+                                    </div>
+                                    <div class="btn-img-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                                <div class="colection-tag">
+                                    <div class="tag-saleoff">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                </div>
+                            </div>
+                            <div class="list-image-hover">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </div>
+                            <div class="text-content-collection">
+                                <h3 class="slide-collection-title">
+                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
+                                </h3>
+                                <div>
+                                    <span class="slide-collection-price">
+                                        847,000đ
+                                    </span>
+                                    <span class="current-price">
+                                        941,000đ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-collection">
+                            <div class="collection-slide-div">
+                                <a href="#">
+                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                                </a>
+                                <div class="btn-img">
+                                    <div class="btn-img-search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="btn-img-buy">
+                                        <span>mua ngay</span>
+                                    </div>
+                                    <div class="btn-img-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                                <div class="colection-tag">
+                                    <div class="tag-saleoff">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                </div>
+                            </div>
+                            <div class="list-image-hover">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </div>
+                            <div class="text-content-collection">
+                                <h3 class="slide-collection-title">
+                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
+                                </h3>
+                                <div>
+                                    <span class="slide-collection-price">
+                                        847,000đ
+                                    </span>
+                                    <span class="current-price">
+                                        941,000đ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-collection">
+                            <div class="collection-slide-div">
+                                <a href="#">
+                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                                </a>
+                                <div class="btn-img">
+                                    <div class="btn-img-search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="btn-img-buy">
+                                        <span>mua ngay</span>
+                                    </div>
+                                    <div class="btn-img-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                                <div class="colection-tag">
+                                    <div class="tag-saleoff">
+                                        <span>-10%</span>
+                                    </div>
+                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                </div>
+                            </div>
+                            <div class="list-image-hover">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </div>
+                            <div class="text-content-collection">
+                                <h3 class="slide-collection-title">
+                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
+                                </h3>
+                                <div>
+                                    <span class="slide-collection-price">
+                                        847,000đ
+                                    </span>
+                                    <span class="current-price">
+                                        941,000đ
+                                    </span>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
-                </div>
-                <div class="left-contain-color">
-                    <p class="left-contain-item-title">Màu Sắc</p>
-                    <div class="left-contain-item-box-content-color">
-
-                        <div class="left-contain-item-box-content-color-item">
-                            <input type="checkbox"  name="color" value="white">
-                            <p style="background-color: red;" for="color"></p><br>
-                        </div>
-                        <div class="left-contain-item-box-content-color-item">
-                            <input type="checkbox"  name="color" value="white">
-                            <p style="background-color: yellow;" for="color"></p><br>
-                        </div>
-                        <div class="left-contain-item-box-content-color-item">
-                            <input type="checkbox"  name="color" value="white">
-                            <p style="background-color: black;" for="color"></p><br>
-                        </div>
-                        <div class="left-contain-item-box-content-color-item">
-                            <input type="checkbox"  name="color" value="white">
-                            <p style="background-color: greenyellow;" for="color"></p><br>
-                        </div>
-
-
-
-
+                    <div class="div-btn-tab">
+                        <a href="#" class="btn btn-tab">xem thêm</a>
                     </div>
                 </div>
             </div>
-            <div class="right-contain">
-               <div class="right-contain-top">
-                <div class="right-contain-title">
-                    <p>Sản phẩm Đầm mới</p>
+        </div>
 
-                </div>
-                <div class="right-contain-sort">
-                    <label for="cars">Sắp Xếp</label>
-                    <select name="cars" id="cars">
-                      <option value="volvo">Tùy chọn</option>
-                      <option value="saab">Sản phẩm bán chạy</option>
-                      <option value="opel">Sắp xếp từ A-Z</option>
-                      <option value="audi">Sắp xếp từ Z-A</option>
-                    </select>
-                </div>
-               </div>
-                <div class="right-contain-body">
-
-                    <div class="right-contain-item">
-                        <div class="right-contain-item-box-image">
-                            <img src="../img/product/lon1.png" class="right-contain-item-image">
-                            <div class="right-contain-item-icon-buy">
-                                <p>MUA NGAY</p>
-                            </div>
-
-                            <div class="right-contain-item-icon-search">
-                                <img src="../img/icon/2-01.png">
-
-                            </div>
-
-                            <div class="right-contain-item-icon-basket">
-                                <img src="../img/icon/11-01.png">
-
-                            </div>
-                        </div>
-
-                        <div class="right-contain-item-image-small">
-                            <img class="right-contain-item-image-small-item" src="../img/product/nho1.png"
-                                urlImage="../img/product/lon1.png">
-                            <img class="right-contain-item-image-small-item" src="../img/product/nho2.png"
-                                urlImage="../img/product/lon2.png">
-                        </div>
-                        <p class="right-contain-item-description">Đầm xòe sát nách màu tím thắt đai C54087C</p>
-                        <p class="right-contain-item-price">399,000₫</p>
-                    </div>
-                    <div class="right-contain-item">
-                        <div class="right-contain-item-box-image">
-                            <img src="../img/product/lon1.png" class="right-contain-item-image">
-                            <div class="right-contain-item-icon-buy">
-                                <p>MUA NGAY</p>
-                            </div>
-
-                            <div class="right-contain-item-icon-search">
-                                <img src="../img/icon/2-01.png">
-
-                            </div>
-
-                            <div class="right-contain-item-icon-basket">
-                                <img src="../img/icon/11-01.png">
-
-                            </div>
-                        </div>
-
-                        <div class="right-contain-item-image-small">
-                            <img class="right-contain-item-image-small-item" src="../img/product/nho1.png"
-                                urlImage="../img/product/lon1.png">
-                            <img class="right-contain-item-image-small-item" src="../img/product/nho2.png"
-                                urlImage="../img/product/lon2.png">
-                        </div>
-                        <p class="right-contain-item-description">Đầm xòe sát nách màu tím thắt đai C54087C</p>
-                        <p class="right-contain-item-price">399,000₫</p>
-                    </div>
-                    <div class="right-contain-item">
-                        <div class="right-contain-item-box-image">
-                            <img src="../img/product/lon1.png" class="right-contain-item-image">
-                            <div class="right-contain-item-icon-buy">
-                                <p>MUA NGAY</p>
-                            </div>
-
-                            <div class="right-contain-item-icon-search">
-                                <img src="../img/icon/2-01.png">
-
-                            </div>
-
-                            <div class="right-contain-item-icon-basket">
-                                <img src="../img/icon/11-01.png">
-
-                            </div>
-                        </div>
-
-                        <div class="right-contain-item-image-small">
-                            <img class="right-contain-item-image-small-item" src="../img/product/nho1.png"
-                                urlImage="../img/product/lon1.png">
-                            <img class="right-contain-item-image-small-item" src="../img/product/nho2.png"
-                                urlImage="../img/product/lon2.png">
-                        </div>
-                        <p class="right-contain-item-description">Đầm xòe sát nách màu tím thắt đai C54087C</p>
-                        <p class="right-contain-item-price">399,000₫</p>
-                    </div>
-                    <div class="right-contain-item">
-                        <div class="right-contain-item-box-image">
-                            <img src="../img/product/lon1.png" class="right-contain-item-image">
-                            <div class="right-contain-item-icon-buy">
-                                <p>MUA NGAY</p>
-                            </div>
-
-                            <div class="right-contain-item-icon-search">
-                                <img src="../img/icon/2-01.png">
-
-                            </div>
-
-                            <div class="right-contain-item-icon-basket">
-                                <img src="../img/icon/11-01.png">
-
-                            </div>
-                        </div>
-
-                        <div class="right-contain-item-image-small">
-                            <img class="right-contain-item-image-small-item" src="../img/product/nho1.png"
-                                urlImage="../img/product/lon1.png">
-                            <img class="right-contain-item-image-small-item" src="../img/product/nho2.png"
-                                urlImage="../img/product/lon2.png">
-                        </div>
-                        <p class="right-contain-item-description">Đầm xòe sát nách màu tím thắt đai C54087C</p>
-                        <p class="right-contain-item-price">399,000₫</p>
-                    </div>
-
-
-                    <div class="right-contain-item">
-                        <div class="right-contain-item-box-image">
-                            <img src="../img/product/lon1.png" class="right-contain-item-image">
-                            <div class="right-contain-item-icon-buy">
-                                <p>MUA NGAY</p>
-                            </div>
-
-                            <div class="right-contain-item-icon-search">
-
-                                <img src="../img/icon/2-01.png">
-
-
-                            </div>
-
-                            <div class="right-contain-item-icon-basket">
-                                <img src="../img/icon/11-01.png">
-
-                            </div>
-                        </div>
-
-                        <div class="right-contain-item-image-small">
-                            <img class="right-contain-item-image-small-item" src="../img/product/nho1.png"
-                                urlImage="../img/product/lon1.png">
-                            <img class="right-contain-item-image-small-item" src="../img/product/nho2.png"
-                                urlImage="../img/product/lon2.png">
-                        </div>
-                        <p class="right-contain-item-description">Đầm xòe sát nách màu tím thắt đai C54087C</p>
-                        <p class="right-contain-item-price">399,000₫</p>
-                    </div>
-                    <div class="right-contain-item">
-                        <div class="right-contain-item-box-image">
-                            <img src="../img/product/lon1.png" class="right-contain-item-image">
-                            <div class="right-contain-item-icon-buy">
-                                <p>MUA NGAY</p>
-                            </div>
-
-                            <div class="right-contain-item-icon-search">
-                                <img src="../img/icon/2-01.png">
-
-                            </div>
-
-                            <div class="right-contain-item-icon-basket">
-                                <img src="../img/icon/11-01.png">
-
-                            </div>
-                        </div>
-
-                        <div class="right-contain-item-image-small">
-                            <img class="right-contain-item-image-small-item" src="../img/product/nho1.png"
-                                urlImage="../img/product/lon1.png">
-                            <img class="right-contain-item-image-small-item" src="../img/product/nho2.png"
-                                urlImage="../img/product/lon2.png">
-                        </div>
-                        <p class="right-contain-item-description">Đầm xòe sát nách màu tím thắt đai C54087C</p>
-                        <p class="right-contain-item-price">399,000₫</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-    </div>
+    </section>
     <footer>
         <div id="home-about">
             <div class="inner">
@@ -774,7 +931,7 @@
         </div>
     </footer>
     <script src="../script/header.js"></script>
-    <script src="../script/product.js"></script>
+    <script src="../script/search.js"></script>
 
 
 </body>
