@@ -4,7 +4,6 @@
 .contain {
   display: flex;
   width: 100%;
-  margin-top: 10px;
 }
 .left-contain {
   flex: 1;
@@ -139,47 +138,47 @@
 
 /*-------------------------- left menu -------------------------------------- */
 .left-contain-item-title {
-    padding-bottom: 10px;
-    font-size: 20px;
-    font-weight: 530;
-  
-    border-bottom: solid 1px black;
-    margin-bottom: 0;
-  }
-  .left-contain-item-box-content-color {
-    overflow: auto;
-  }
-  .left-contain-item-box-content-color-item {
-    float: left;
-    display: flex;
-    width: 50%;
-    margin-top: 25px;
-  }
-  .left-contain-item-box-content-color-item p {
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    margin-left: 10px;
-  }
-  .left-contain-item-box-content-size {
-    overflow: auto;
-    margin-top: 25px;
-  }
-  .left-contain-item-box-content-size-item {
-    float: left;
-    width: 50%;
-    margin-bottom: 20px;
-  }
-  .left-contain-item-box-content {
-    margin-top: 25px;
-  }
-  .left-contain-item-box-content input,
-  label {
-    margin-bottom: 20px;
-  }
-  .left-contain-item-box-content-color-item input{
-      margin-top: 3px;
-  }
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 530;
+
+  border-bottom: solid 1px black;
+  margin-bottom: 0;
+}
+.left-contain-item-box-content-color {
+  overflow: auto;
+}
+.left-contain-item-box-content-color-item {
+  float: left;
+  display: flex;
+  width: 50%;
+  margin-top: 25px;
+}
+.left-contain-item-box-content-color-item p {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-left: 10px;
+}
+.left-contain-item-box-content-size {
+  overflow: auto;
+  margin-top: 25px;
+}
+.left-contain-item-box-content-size-item {
+  float: left;
+  width: 50%;
+  margin-bottom: 20px;
+}
+.left-contain-item-box-content {
+  margin-top: 25px;
+}
+.left-contain-item-box-content input,
+label {
+  margin-bottom: 20px;
+}
+.left-contain-item-box-content-color-item input {
+  margin-top: 3px;
+}
 /* ------------can chinh right-------------- */
 
 .right-contain-title p {
@@ -205,4 +204,28 @@
 }
 .right-contain-sort label {
   margin-right: 15px;
+}
+/* ---------------- */
+.pagination {
+  width: 100%;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+}
+.pagination a {
+  display: block;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+ 
+.pagination a.active {
+    background-color: gray;
+    color: white;
+}
+ 
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
 }

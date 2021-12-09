@@ -214,6 +214,7 @@ body {
   justify-content: center;
   position: relative;
   flex-wrap: wrap;
+  padding: 0 100px;
 }
 .nav-item {
   padding: 10px 0px;
@@ -288,4 +289,24 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+/* scroll up */
+.scrollup {
+  position: fixed;
+  padding: 18px 18px;
+  background: black;
+  bottom: -20%;
+  right: 24px;
+  color: white;
+  z-index: 10;
+  transition: 0.4s;
+  font-size: 16px;
+  border-radius: 8px;
+  opacity: 0.6;
+}
+.scrollup:hover {
+  opacity: 0.8;
+}
+.show-scroll {
+  bottom: 80px;
 }
