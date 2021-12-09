@@ -21,9 +21,28 @@
 
 </head>
 <body>
-
 <b class="screen-overlay"></b>
-
+<!-- * modal delete -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Xoá sản phẩm</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Bạn có chắc chắn muốn xoá sản phẩm này không?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+          <button type="button" class="btn btn-primary bg-danger">Đồng ý</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <aside class="navbar-aside" id="offcanvas_aside">
 <div class="aside-top">
   <a href="page-index-1.html" class="brand-wrap">
@@ -50,6 +69,7 @@
         <a href="page-products-table.html">Xem dạng bảng</a>
         <a href="page-products-grid.html">Xem dạng lưới</a>
         <a href="page-categories.html">Thể loại</a>
+        <a href="page-form-product-3.html">Thêm sản phẩm</a>
       </div>
     </li>
     <li class="menu-item has-submenu">
@@ -69,22 +89,12 @@
         <a href="page-sellers-cards.html">Thẻ nhân viên</a>
         <a href="page-sellers-list.html">Danh sách nhân viên</a>
         <a href="page-seller-detail.html">Hồ sơ nhân viên</a>
+       <a href="page-account-register.html">Thêm nhân viên</a>
       </div>
     </li>
     <li class="menu-item">
-      <a class="menu-link" href="page-form-product-3.html"> <i class="icon material-icons md-add_box"></i>
-        <span class="text">Thêm sản phẩm</span>
-      </a>
-    </li>
-
-    <li class="menu-item">
       <a class="menu-link" href="page-transactions-B.html"> <i class="icon material-icons md-monetization_on"></i>
         <span class="text">Giao dịch</span>
-      </a>
-    </li>
-    <li class="menu-item">
-      <a class="menu-link" href="page-account-register.html"> <i class="icon material-icons md-person"></i>
-        <span class="text">Thêm nhân viên</span>
       </a>
     </li>
     <li class="menu-item">
@@ -196,6 +206,7 @@
                     <span class="icon icon-sm rounded-circle bg-warning-light"><i class="text-warning material-icons md-shopping_basket"></i></span>
                     <div class="text">
                         <h6 class="mb-1">Tổng sản phẩm</h6>  <span>5678</span>
+
                     </div>
                 </article>
 	        </div> <!--  end// -->
@@ -332,9 +343,9 @@
           				<div class="dropdown">
           					<a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
           					<div class="dropdown-menu">
-							    <a class="dropdown-item" href="#">View detail</a>
-							    <a class="dropdown-item" href="#">Edit info</a>
-							    <a class="dropdown-item text-danger" href="#">Delete</a>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
           					</div>
           				</div> <!-- dropdown //end -->
           			</td>
@@ -351,9 +362,9 @@
           				<div class="dropdown">
           					<a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
           					<div class="dropdown-menu">
-							    <a class="dropdown-item" href="#">View detail</a>
-							    <a class="dropdown-item" href="#">Edit info</a>
-							    <a class="dropdown-item text-danger" href="#">Delete</a>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
           					</div>
           				</div>
           				<!-- dropdown //end -->
@@ -371,9 +382,9 @@
           				<div class="dropdown">
           					<a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
           					<div class="dropdown-menu">
-							    <a class="dropdown-item" href="#">View detail</a>
-							    <a class="dropdown-item" href="#">Edit info</a>
-							    <a class="dropdown-item text-danger" href="#">Delete</a>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
           					</div>
           				</div> <!-- dropdown //end -->
           			</td>
@@ -390,9 +401,9 @@
           				<div class="dropdown">
           					<a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
           					<div class="dropdown-menu">
-							    <a class="dropdown-item" href="#">View detail</a>
-							    <a class="dropdown-item" href="#">Edit info</a>
-							    <a class="dropdown-item text-danger" href="#">Delete</a>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
           					</div>
           				</div> <!-- dropdown //end -->
           			</td>
@@ -409,9 +420,9 @@
           				<div class="dropdown">
           					<a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
           					<div class="dropdown-menu">
-							    <a class="dropdown-item" href="#">View detail</a>
-							    <a class="dropdown-item" href="#">Edit info</a>
-							    <a class="dropdown-item text-danger" href="#">Delete</a>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
           					</div>
           				</div> <!-- dropdown //end -->
           			</td>
@@ -428,9 +439,9 @@
           				<div class="dropdown">
           					<a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
           					<div class="dropdown-menu">
-							    <a class="dropdown-item" href="#">View detail</a>
-							    <a class="dropdown-item" href="#">Edit info</a>
-							    <a class="dropdown-item text-danger" href="#">Delete</a>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
           					</div>
           				</div> <!-- dropdown //end -->
           			</td>
@@ -447,9 +458,9 @@
           				<div class="dropdown">
           					<a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
           					<div class="dropdown-menu">
-							    <a class="dropdown-item" href="#">View detail</a>
-							    <a class="dropdown-item" href="#">Edit info</a>
-							    <a class="dropdown-item text-danger" href="#">Delete</a>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
           					</div>
           				</div> <!-- dropdown //end -->
           			</td>
@@ -472,6 +483,9 @@
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 
+
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+<script src="js/bootstrap.min.js"></script>
 <!-- ChartJS files-->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
@@ -508,6 +522,7 @@
 	    // Configuration options go here
 	    options: {}
 	});
+
 </script>
 
 </body>

@@ -21,7 +21,27 @@
 
 </head>
 <body>
-
+<!-- * modal delete -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Xoá sản phẩm</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Bạn có chắc chắn muốn xoá sản phẩm này không?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+          <button type="button" class="btn btn-primary bg-danger">Đồng ý</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <b class="screen-overlay"></b>
 
 <aside class="navbar-aside" id="offcanvas_aside">
@@ -50,6 +70,7 @@
             <a href="page-products-table.html">Xem dạng bảng</a>
             <a href="page-products-grid.html">Xem dạng lưới</a>
             <a href="page-categories.html">Thể loại</a>
+            <a href="page-form-product-3.html">Thêm sản phẩm</a>
           </div>
         </li>
         <li class="menu-item has-submenu">
@@ -69,22 +90,12 @@
             <a href="page-sellers-cards.html">Thẻ nhân viên</a>
             <a href="page-sellers-list.html">Danh sách nhân viên</a>
             <a href="page-seller-detail.html">Hồ sơ nhân viên</a>
+            <a href="page-account-register.html">Thêm nhân viên</a>
           </div>
         </li>
         <li class="menu-item">
-          <a class="menu-link" href="page-form-product-3.html"> <i class="icon material-icons md-add_box"></i>
-            <span class="text">Thêm sản phẩm</span>
-          </a>
-        </li>
-
-        <li class="menu-item">
           <a class="menu-link" href="page-transactions-B.html"> <i class="icon material-icons md-monetization_on"></i>
             <span class="text">Giao dịch</span>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="page-account-register.html"> <i class="icon material-icons md-person"></i>
-            <span class="text">Thêm nhân viên</span>
           </a>
         </li>
         <li class="menu-item">
@@ -180,21 +191,21 @@
                         </div>
                         <div class="col-md-3 col-12 me-auto mb-md-0 mb-3">
                             <select class="form-select">
-                                <option>All category</option>
-                                <option>Electronics</option>
-                                <option>Clothes</option>
-                                <option>Automobile</option>
+                                <option>Loại</option>
+                                <option>Áo</option>
+                                <option>Váy</option>
+                                <option>Quần</option>
                             </select>
                         </div>
-                        <div class="col-md-2 col-6">
+                        <div class="col-md-2 col-6" style="padding: 0 2px;">
                             <input type="date" class="form-control">
                         </div>
                         <div class="col-md-2 col-6">
                             <select class="form-select">
-                                <option>Status</option>
-                                <option>Active</option>
-                                <option>Disabled</option>
-                                <option>Show all</option>
+                                <option>Trạng thái</option>
+                                <option>Còn hàng</option>
+                                <option>Hết hàng</option>
+                                <option>Hiện tất cả</option>
                             </select>
                         </div>
                     </div>
@@ -221,7 +232,7 @@
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>$34.50</span> </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-status">
-                                <span class="badge rounded-pill alert-success">Active</span>
+                                <span class="badge rounded-pill alert-success">Còn hàng</span>
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-date">
                                 <span>04.12.2020</span>
@@ -230,10 +241,10 @@
                                 <div class="dropdown float-end">
                                     <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">View detail</a>
-                                        <a class="dropdown-item" href="#">Edit info</a>
-                                        <a class="dropdown-item text-danger" href="#">Delete</a>
-                                    </div>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
+          					</div>
                                 </div> <!-- dropdown // -->
                             </div>
                         </div> <!-- row .// -->
@@ -259,7 +270,7 @@
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>$990.99</span> </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-status">
-                                <span class="badge rounded-pill alert-success">Active</span>
+                                <span class="badge rounded-pill alert-success">Còn hàng</span>
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-date">
                                 <span>02.11.2020</span>
@@ -268,10 +279,10 @@
                                 <div class="dropdown float-end">
                                     <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">View detail</a>
-                                        <a class="dropdown-item" href="#">Edit info</a>
-                                        <a class="dropdown-item text-danger" href="#">Delete</a>
-                                    </div>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
+          					</div>
                                 </div> <!-- dropdown // -->
                             </div>
                         </div> <!-- row .// -->
@@ -296,7 +307,7 @@
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>$76.99</span> </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-status">
-                                <span class="badge rounded-pill alert-warning">Archived</span>
+                                <span class="badge rounded-pill alert-warning">Hàng lỗi</span>
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-date">
                                 <span>13.11.2020</span>
@@ -305,10 +316,10 @@
                                 <div class="dropdown float-end">
                                     <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">View detail</a>
-                                        <a class="dropdown-item" href="#">Edit info</a>
-                                        <a class="dropdown-item text-danger" href="#">Delete</a>
-                                    </div>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
+          					</div>
                                 </div> <!-- dropdown // -->
                             </div>
                         </div> <!-- row .// -->
@@ -333,7 +344,7 @@
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>$18.00</span> </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-status">
-                                <span class="badge rounded-pill alert-success">Active</span>
+                                <span class="badge rounded-pill alert-success">Còn hàng</span>
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-date">
                                 <span>02.11.2020</span>
@@ -342,10 +353,10 @@
                                 <div class="dropdown float-end">
                                     <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">View detail</a>
-                                        <a class="dropdown-item" href="#">Edit info</a>
-                                        <a class="dropdown-item text-danger" href="#">Delete</a>
-                                    </div>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
+          					        </div>
                                 </div> <!-- dropdown // -->
                             </div>
                         </div> <!-- row .// -->
@@ -370,7 +381,7 @@
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>$76.99</span> </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-status">
-                                <span class="badge rounded-pill alert-danger">Disabled</span>
+                                <span class="badge rounded-pill alert-danger">Hết hàng</span>
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-date">
                                 <span>13.11.2020</span>
@@ -379,10 +390,10 @@
                                 <div class="dropdown float-end">
                                     <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">View detail</a>
-                                        <a class="dropdown-item" href="#">Edit info</a>
-                                        <a class="dropdown-item text-danger" href="#">Delete</a>
-                                    </div>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
+          					</div>
                                 </div> <!-- dropdown // -->
                             </div>
                         </div> <!-- row .// -->
@@ -407,7 +418,7 @@
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>$18.00</span> </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-status">
-                                 <span class="badge rounded-pill alert-warning">Archived</span>
+                                 <span class="badge rounded-pill alert-warning">Hàng lỗi</span>
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-date">
                                 <span>02.11.2020</span>
@@ -416,10 +427,10 @@
                                 <div class="dropdown float-end">
                                     <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">View detail</a>
-                                        <a class="dropdown-item" href="#">Edit info</a>
-                                        <a class="dropdown-item text-danger" href="#">Delete</a>
-                                    </div>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
+          					</div>
                                 </div> <!-- dropdown // -->
                             </div>
                         </div> <!-- row .// -->
@@ -444,7 +455,7 @@
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>$76.99</span> </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-status">
-                                 <span class="badge rounded-pill alert-success">Active</span>
+                                 <span class="badge rounded-pill alert-success">Còn hàng</span>
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-date">
                                 <span>13.11.2020</span>
@@ -453,10 +464,10 @@
                                 <div class="dropdown float-end">
                                     <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">View detail</a>
-                                        <a class="dropdown-item" href="#">Edit info</a>
-                                        <a class="dropdown-item text-danger" href="#">Delete</a>
-                                    </div>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
+          					</div>
                                 </div> <!-- dropdown // -->
                             </div>
                         </div> <!-- row .// -->
@@ -481,7 +492,7 @@
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>$18.00</span> </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-status">
-                                 <span class="badge rounded-pill alert-success">Active</span>
+                                 <span class="badge rounded-pill alert-success">Còn hàng</span>
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-date">
                                 <span>31.01.2021</span>
@@ -490,10 +501,10 @@
                                 <div class="dropdown float-end">
                                     <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">View detail</a>
-                                        <a class="dropdown-item" href="#">Edit info</a>
-                                        <a class="dropdown-item text-danger" href="#">Delete</a>
-                                    </div>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
+          					</div>
                                 </div> <!-- dropdown // -->
                             </div>
                         </div> <!-- row .// -->
@@ -518,7 +529,7 @@
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>$76.99</span> </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-status">
-                                 <span class="badge rounded-pill alert-success">Active</span>
+                                 <span class="badge rounded-pill alert-success">Còn hàng</span>
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-date">
                                 <span>13.11.2020</span>
@@ -527,10 +538,10 @@
                                 <div class="dropdown float-end">
                                     <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">View detail</a>
-                                        <a class="dropdown-item" href="#">Edit info</a>
-                                        <a class="dropdown-item text-danger" href="#">Delete</a>
-                                    </div>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
+          					</div>
                                 </div> <!-- dropdown // -->
                             </div>
                         </div> <!-- row .// -->
@@ -555,7 +566,7 @@
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>$180.99</span> </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-status">
-                                <span class="badge rounded-pill alert-success">Active</span>
+                                <span class="badge rounded-pill alert-success">Còn hàng</span>
                             </div>
                             <div class="col-lg-2 col-sm-2 col-4 col-date">
                                 <span>02.11.2020</span>
@@ -564,10 +575,10 @@
                                 <div class="dropdown float-end">
                                     <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="material-icons md-more_horiz"></i> </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">View detail</a>
-                                        <a class="dropdown-item" href="#">Edit info</a>
-                                        <a class="dropdown-item text-danger" href="#">Delete</a>
-                                    </div>
+							    <a class="dropdown-item" href="#">Xem chi tiết</a>
+							    <a class="dropdown-item" href="#">Chỉnh sửa</a>
+							    <a class="dropdown-item text-danger" data-toggle="modal" data-target="#exampleModalCenter">Xoá</a>
+          					</div>
                                 </div> <!-- dropdown // -->
                             </div>
                         </div> <!-- row .// -->
@@ -576,11 +587,11 @@
 
                     <nav class="float-end mt-4" aria-label="Page navigation">
                       <ul class="pagination">
-                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#">Trước</a></li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Sau</a></li>
                       </ul>
                     </nav>
 
@@ -601,6 +612,7 @@
 
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <!-- Custom JS -->
 <script src="js/scriptc619.js?v=1.0"></script>
