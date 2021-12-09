@@ -7,15 +7,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
-.footer-top img {
-  margin-top: 40px;
 
-  width: 250px;
-  height: 56px;
-}
 .footer-content {
-  margin-top: 40px;
   display: flex;
   border-bottom: solid black 1px;
   padding-bottom: 20px;
@@ -123,6 +119,7 @@ footer {
 }
 .home-about-icon i {
   font-size: 20px;
+  color: #fff;
 }
 .home-about-icon:hover i {
   animation: rotating 0.4s linear;
