@@ -90,7 +90,7 @@ else {
    replaceClassWrap("wrap__element-mobile") ;
    numWrapSlide=1;}
 }
-// điều chỉnh wrap area
+// điều chỉnh khu vực các sản phẩm liên quan dựa vào class name
 function replaceClassWrap(className){
 
 slideWrap.innerHTML="";
@@ -114,14 +114,19 @@ function settingRelatedProduct(listRelatedProduct,className){
                         <a href="" class="advise__button text-center">TƯ VẤN</a>
                         </div>
                     </div>
+                    ` + checkAvailable(related)+`
                     </div>
                     <div class="wrap__title">
                         <a class="text-center" href=""> ${related.title}</a>
                     </div>
                     <div class="wrap__price text-center">
-                        `+ checkSale(related)+`
 
-                    </div>
+                    `+ checkSale(related)+`
+                       
+                </div>`;
+                        `+ checkSale(related)'+
+
+                </div>
                     <div class="wrap__sale-off text-center">
                         ${related.sale}%
                     </div>
@@ -147,10 +152,14 @@ if(relatedProduct.sale>0) return `<span class="curren-price">`+convertPrice(rela
                         else return `<span class="curren-price">`+convertPrice(relatedProduct.price)+`₫
                         </span>`;
 }
-// Kiểm tra có còn hàng hay không
+// Kiểm tra có còn hàng hay không 
 function checkAvailable(product){
-if(product.available==0) return `<div class="wrap__sold-out text-center">STORE ONLY</div>`
-else return '';
+if(product.available==0) return `
+<div class="wrap__sale-off text-center">
+${product.sale}%
+</div>
+<div class="wrap__sold-out text-center">STORE ONLY</div>`
+else return `<div class="wrap__sale-off text-center" style="right:50%; transform:translateX(50%);">${product.sale}%</div>`;
 }
 
 //chuyển slide các sản phẩm liên quan
@@ -372,12 +381,7 @@ list=document.getElementsByClassName("image__left__element");
 
         };
 
-    }
-
-
-
-
-
+    } 
 showList(indexOfImage);
 // khởi tạo thuộc tính ban đầu cho thẻ khi mới load trang
 leftToRightSupport('<img class="image__right__element" src="../img/321691492193020636/1.jpg" alt="Front">');
@@ -399,7 +403,6 @@ function showList(index1){
     listImage[indexOfImage].style.display="block";
     listImage[indexOfImage+1].style.display="block";
 }
-    // cài đặt event cho các thẻ img ()
 
     // thiết lập righ Image nhờ url
 function leftToRightSupport(url){
