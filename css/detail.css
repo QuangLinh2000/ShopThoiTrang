@@ -208,7 +208,7 @@ margin-bottom: var(--margin-bottom-10);
 
 }
 .product__price .product__percent__sale{
-    background-image: url('/assest/img/sale-background.png');
+    background-image: url('/img/icon/sale-background.png');
     background-repeat: no-repeat;
     background-position: left center;
     object-fit: cover;
@@ -329,7 +329,7 @@ cursor: pointer;
     outline: 0;
     height: 36px;
     line-height: 36px;
-
+    transition: 0.5s;
     width: 100%;
     margin-bottom: 10px;
     color: #000;
@@ -338,7 +338,47 @@ cursor: pointer;
     font-weight: bold;
     margin-bottom: 10px;
     cursor: pointer;
+    z-index: 2;
 }
+.add-cart__button:hover,.buy-now__button:hover{
+    color: #fff !important;
+}
+.add-cart__button::before{
+content:'';
+position: absolute;
+top: 0;
+left: 0;
+background: red;
+height: 100%;
+width: 50%;
+z-index: -1;
+transform: scaleX(0);
+transition: transform 0.5s;
+transform-origin: right;
+}
+.add-cart__button:hover:before{
+    transform: scaleX(1);
+    transition: 0.5s;
+    transform-origin: right;
+}
+.add-cart__button::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    right:0;
+    background: red;
+    height: 100%;
+    width: calc(50% + 1px);
+    z-index:-1;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+    transform-origin: left;
+    }
+    .add-cart__button:hover::after{
+        transform: scaleX(1);
+        transition: 0.5s;
+        transform-origin: left;
+    }
 .buy-now{
     margin-bottom: 35px;
 }
@@ -355,7 +395,45 @@ cursor: pointer;
     color: #fff;
     background: #000;
     font-weight: bold;
+    z-index: 2;
 }
+
+.buy-now__button::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+    transform-origin: right;
+    }
+    .buy-now__button:hover:before{
+        transform: scaleX(1);
+        transition: 0.5s;
+        transform-origin: right;
+    }
+    .buy-now__button::after{
+        content:'';
+        position: absolute;
+        top: 0;
+        right:0;
+        background: red;
+        height: 100%;
+        width: calc(50% + 1px);
+        z-index:-1;
+        transform: scaleX(0);
+        transition: transform 0.5s;
+        transform-origin: left;
+        }
+        .buy-now__button:hover::after{
+            transform: scaleX(1);
+            transition: 0.5s;
+            transform-origin: left;
+        }
 .store-only button{
     display: inline-block;
     position: relative;
@@ -446,21 +524,31 @@ flex-shrink: 0;
 
 }
 .wrap__element__image  img{
+    height: 100%;
     width: 100%;
+    transform: scale(0.8) translateY(-25px);
     object-fit: contain;
-    padding-bottom: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease 0s;
+
 }
 .wrap__element__image{
     position: relative;
+    background:linear-gradient(#ccc,rgb(65, 63, 63) 99%);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+
 }
 .wrap__element__image .clear-fix{
     position: absolute;
     left: calc(-100% - 10px);
     right: 0;
     top: 0;
-    overflow: hidden;
+
     width: 100%;
-    height:calc(100% - 10px) ;
+    height:calc(100% ) ;
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.5);
@@ -469,6 +557,16 @@ flex-shrink: 0;
  
 
 }
+.wrap__element__image:hover .wrap__sold-out{
+left: -500px !important;
+}
+.wrap__element__image:hover .wrap__sale-off{
+    right: -500px !important;
+}
+.wrap__element__image:hover img{
+    transform: translateY(0) scale(1);
+    border-radius: 0;
+    }
 .wrap__element:hover .clear-fix{
     left: 0;
 }
@@ -543,25 +641,27 @@ position: relative;
     height: 24px;
     line-height: 24px;
     display: inline-block;
-    top: 0px;
-    right: 0px;
+    bottom: 5px;
+    right: 5px;
     background: #fff;
     color: #FF3B30;
     font-weight: bold;
     font-size: var(--small-font-size);
+    transition: all 0.5s ease 0s;
 }
 .wrap__sold-out{
     position: absolute;
     height: 34px;
     line-height: 34px;
     display: inline-block;
-    top: 5px;
+    bottom: 5px;
     left: 5px;
     background: #f66d52;
     color: #fff;
     border-radius: 5px;
     padding: 0 15px;
     font-size: var(--small-font-size);
+    transition: all 0.5s ease 0s;
 }
 .origin-price{
     margin-left: 10px;
