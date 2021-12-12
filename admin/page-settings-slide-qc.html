@@ -11,7 +11,6 @@
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
   <link href="css/bootstrapf9e3.css?v=1.1" rel="stylesheet" type="text/css"/>
-
   <link rel="stylesheet" href="fonts/material-icon/css/round.css"/>
 
   <!-- custom style -->
@@ -139,7 +138,7 @@
               <a class="nav-link btn-icon" href="#"> <i class="material-icons md-notifications_active"></i> </a>
             </li>
             <li class="dropdown nav-item">
-              <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#"> <img class="img-xs rounded-circle" src="images/people/avatar1.jpg" alt="User"></a>
+              <a class="dropdown-toggle"  href="#"> <img class="img-xs rounded-circle" src="images/people/avatar1.jpg" alt="User"></a>
               <div class="dropdown-menu dropdown-menu-end">
                 <a class="dropdown-item" href="page-seller-detail.html">Tài khoản</a>
                 <a class="dropdown-item" href="page-settings-1.html">Cài đặt</a>
@@ -153,16 +152,17 @@
 <section class="content-main">
 
   <div class="content-header">
-    <h2 class="content-title">Tùy chỉnh trang </h2>
+    <h2 class="content-title">Site settings </h2>
   </div>
 
 <div class="card">
   <div class="card-body">
     <div class="row gx-5">
-      <aside class="col-lg-3 border-end">
+      <aside class="col-lg-3 border-end" style="position: sticky;
+      position: -webkit-sticky;
+      top: 10px; height: 450px;">
 
         <nav class="nav nav-pills flex-lg-column mb-4">
-
           <ul class="menu-aside">
             <li class="menu-item  active">
               <a class="menu-link" href="page-settings-2.html">
@@ -176,7 +176,7 @@
               <div class="submenu">
                 <a href="page-settings-slide-qc.html">Silde quảng cáo</a>
                 <a href="page-settings-bo-suu-tap.html">Bộ sưu tập</a>
-                <a href="page-settings-cam-nhan.html">Cảm nhận</a>
+                <a href="page-settings-cam-nhan.html">Nhận xét</a>
                 <a href="page-settings-tin-tuc.html">Tin tức</a>
               </div>
             </li>
@@ -198,177 +198,152 @@
             </li>
            
           </ul>
-
+        
         </nav>
 
       </aside>
       <div class="col-lg-9">
         <section class="content-body p-xl-4">
+<!-- ------------dialog remove   start------------------   -->
+<!-- * modal delete -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Xoá sản phẩm</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Bạn có chắc chắn muốn xoá không?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+        <button type="button" class="btn btn-primary bg-danger">Đồng ý</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- ----------------- end ------------------------->
 
           <form>
 
-          <div class="row border-bottom mb-4 pb-4">
-            <div class="col-md-5">
-
-              <h5>Tên trang web</h5>
-
-              <p class="text-muted" style="max-width:90%">
-                Các ngôn ngữ được hỗ trợ của tất cả các trang bao gồm từng sản phẩm</p>
-            </div> <!-- col.// -->
-
-            
-            <div class="col-md-7">
-
-                <div class="mb-3">
-                  <label class="form-label">Tiêu đề trang chủ</label>
-                  <input class="form-control" type="text" name="" placeholder="Type here">
-
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label">Mô tả</label>
-                  <textarea type="text" class="form-control"></textarea>
-                </div>
-
-            </div> <!-- col.// -->
-          </div> <!-- row.// -->
-          <div class="row border-bottom mb-4 pb-4">
-            <div class="col-md-5">
-              <h5>Logo trang web </h5>
-              <p class="text-muted" style="max-width:90%">Logo được thiết lập cho toàn bộ trang web</p>
-            </div> <!-- col.// -->
-            <div class="col-md-7">
-              <div class="mb-3">
-                <label class="form-label">Chọn hình ảnh từ thiết bị (180x40)</label>
-                <input class="form-control" type="file">
-              </div>
-              <!-- <img src="" alt="" style="width: 180px; height: 40px;"> -->
-          
-            </div> <!-- col.// -->
-          </div> <!-- row.// -->
-
-          <div class="row border-bottom mb-4 pb-4">
-            <div class="col-md-5">
-
-              <h5>Truy cập </h5>
-              <p class="text-muted" style="max-width:90%">Cấp quyền truy cập vào tất cả các trang bao gồm từng sản phẩm</p>
-
-            </div> <!-- col.// -->
-            <div class="col-md-7">
-
-              <label class="mb-2 form-check">
-                  <input class="form-check-input" checked="" name="mycheck_a1" type="radio">
-
-                  <span class="form-check-label"> Tất cả đăng ký  được kích hoạt </span>
-              </label>
-              <label class="mb-2 form-check">
-                  <input class="form-check-input" name="mycheck_a1" type="radio">
-                  <span class="form-check-label"> Chỉ nhân viên được kích hoạt</span>
-              </label>
-               <label class="mb-2 form-check">
-                  <input class="form-check-input" name="mycheck_a1" type="radio">
-                  <span class="form-check-label"> chỉ admin được kích hoạt </span>
-              </label>
-               <label class="mb-2 form-check">
-                  <input class="form-check-input" name="mycheck_a1" type="radio">
-                  <span class="form-check-label">  Tạm ngừng kinh doanh cửa hàng </span>
-
-              </label>
-
-            </div> <!-- col.// -->
-          </div> <!-- row.// -->
-
+         
 
 
           <div class="row border-bottom mb-4 pb-4">
-            <div class="col-md-5">
-
-              <h5>Thông báo  </h5>
-
-              <p class="text-muted" style="max-width:90%">
-              cài đặt thông báo cho admin khi có yêu cầu khách hàng </p>
-            </div>
-            <div class="col-md-7">
-
-
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="" id="mycheck_notify" checked>
-                <label class="form-check-label" for="mycheck_notify">
-                  Gửi thông báo về mỗi lần đăng ký người dùng
-                </label>
-              </div>
-
-              <div class="mb-3">
-                <input class="form-control" placeholder="Text">
-              </div>
-
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="" id="mycheck_notify" checked>
-                <label class="form-check-label" for="mycheck_notify">
-                Gửi thông báo về mỗi khi có người đặt hàng
-
-                </label>
-              </div>
-
-              <div class="mb-3">
-                <input class="form-control" placeholder="Nhập">
-              </div>
-
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="" id="mycheck_notify" checked>
-                <label class="form-check-label" for="mycheck_notify">
-                  Gửi thông báo về mỗi khi có người  muốn hủy đơn hàng
-                </label>
-              </div>
-
-              <div class="mb-3">
-                <input class="form-control" placeholder="Text">
+            <div class="col-md-6">
+              <h5 class="pb-4">Thêm hình ảnh</h5>
+              <div class="mb-3 ">
+                <input class="form-control" id="file-upload" accept=".jpg, .png" type="file">
               </div>
             </div> <!-- col.// -->
-          </div> <!-- row.// -->
-
-
-          <div class="row border-bottom mb-4 pb-4">
-            <div class="col-md-5">
-
-              <h5>Tiền tệ</h5>
-              <p class="text-muted" style="max-width:90%">Tiền tệ được sử dụng trong trang web</p>
-
-            </div> <!-- col.// -->
-            <div class="col-md-7">
-
-              <div class="mb-3" style="max-width: 200px">
-
-                <label class="form-label">Tiền tệ chính</label>
-
-                <select class="form-select">
-                  <option>US Dollar</option>
-                  <option>EU Euro</option>
-                  <option>RU Ruble</option>
-                  <option>Việt nam đồng</option>
-                </select>
-              </div>
-
-              <div class="mb-3" style="max-width: 200px">
-                <label class="form-label">Tiền tệ thay thế</label>
-
-                <select class="form-select">
-                  <option>US dollar</option>
-                  <option>RUBG russia</option>
-                  <option>INR india</option>
-                  <option>Việt nam đồng</option>
-
-                </select>
-              </div>
-
-            </div> <!-- col.// -->
-          </div> <!-- row.// -->
-
-          <button class="btn btn-primary" type="submit">Xem demo</button>  &nbsp;
+            <div class="col-md-6">
+              <h5 style="height: 45px;"> </h5>
+          <button class="btn btn-primary" style="margin-left: 55px;" type="submit">Xem demo</button>  &nbsp;
           <button class="btn btn-primary" type="submit">Lưu tất cả thay đổi</button>  &nbsp;
-          <button class="btn btn-outline-danger" type="reset">Cài lại</button>
 
+            </div> <!-- col.// -->
+          </div> <!-- row.// -->
+          <div  class="row  mb-4 pb-4 upload-imgae" id="upload-image-qc">
+          
+          
+          </div> <!-- row.// -->
+          
+          <div class="row border-bottom mb-4 pb-4">
+            <div class="col-md-5">
+              <h5>Hình ảnh quảng cáo</h5>
+            </div> <!-- col.// -->
+          
+          </div> <!-- row.// -->
+            
+          <div class="row border-bottom mb-4 pb-4">
+            <div class="row">
+               <div class="col-xl-1"></div>
+               <div class="col-xl-10">
+                <div class="col">
+                  <div class="card card-product-grid">
+                    <a href="#" class="img-wrap"> <img src="../img/slider1.jpg" alt="Product"> </a>
+                    <div class="info-wrap row">
+                     <div class="col-xl-4"></div>
+                      <a  data-toggle="modal" data-target="#exampleModalCenter" class="btn col-xl-4 btn-sm btn-outline-danger">
+                          <i class="material-icons md-delete_forever"></i>  Xóa
+                      </a>
+                      <div class="col-xl-4"></div>
+  
+                    </div>
+                  </div> <!-- card-product  end// -->
+                </div> <!-- col.// -->
+               </div>
+
+            </div>
+            <div class="row">
+              <div class="col-xl-1"></div>
+              <div class="col-xl-10">
+               <div class="col">
+                 <div class="card card-product-grid">
+                   <a href="#" class="img-wrap"> <img src="../img/slider2.jpg" alt="Product"> </a>
+                   <div class="info-wrap row">
+                    <div class="col-xl-4"></div>
+                     <a data-toggle="modal" data-target="#exampleModalCenter" href="#"  class="btn col-xl-4 btn-sm btn-outline-danger">
+                         <i class="material-icons md-delete_forever"></i>  xóa
+                     </a>
+                     <div class="col-xl-4"></div>
+ 
+                   </div>
+                 </div> <!-- card-product  end// -->
+               </div> <!-- col.// -->
+              </div>
+
+           </div>
+           <div class="row">
+            <div class="col-xl-1"></div>
+            <div class="col-xl-10">
+             <div class="col">
+               <div class="card card-product-grid">
+                 <a href="#" class="img-wrap"> <img src="../img/slider3.jpg" alt="Product"> </a>
+                 <div class="info-wrap row">
+                  <div class="col-xl-4"></div>
+                   <a data-toggle="modal" data-target="#exampleModalCenter" href="#"  class="btn col-xl-4 btn-sm btn-outline-danger">
+                       <i class="material-icons md-delete_forever"></i>  xóa
+                   </a>
+                   <div class="col-xl-4"></div>
+
+                 </div>
+               </div> <!-- card-product  end// -->
+             </div> <!-- col.// -->
+            </div>
+
+         </div>
+         <div class="row">
+          <div class="col-xl-1"></div>
+          <div class="col-xl-10">
+           <div class="col">
+             <div class="card card-product-grid">
+               <a href="#" class="img-wrap"> <img src="../img/slider4.jpg" alt="Product"> </a>
+               <div class="info-wrap row">
+                <div class="col-xl-4"></div>
+                 <a data-toggle="modal" data-target="#exampleModalCenter" href="#"  class="btn col-xl-4 btn-sm btn-outline-danger">
+                     <i class="material-icons md-delete_forever"></i>  xóa
+                 </a>
+                 <div class="col-xl-4"></div>
+
+               </div>
+             </div> <!-- card-product  end// -->
+           </div> <!-- col.// -->
+          </div>
+
+       </div>
+         
+              
+          </div> <!-- row.// -->
+
+
+
+         
 
           </form>
 
@@ -395,7 +370,9 @@
 
 <!-- Custom JS -->
 <script src="js/scriptc619.js?v=1.0" type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>
 
+<script src="js/upload-imga.js"></script>
 
 </body>
 

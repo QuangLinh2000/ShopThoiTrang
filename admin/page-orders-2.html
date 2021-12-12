@@ -155,7 +155,7 @@
     <section class="content-main">
 
         <div class="content-header">
-            <h2 class="content-title">Orders two</h2>
+            <h2 class="content-title">Danh sách đơn hàng</h2>
             <div>
                 <a href="#" class="btn btn-primary"><i class="material-icons md-plus"></i> Tạo mới</a>
             </div>
@@ -192,7 +192,7 @@
                             <thead>
                                 <tr>
                                     <th>Mã</th>
-                                    <th>Customer name</th>
+                                    <th>Tên khách hàng</th>
                                     <th>Giá</th>
                                     <th>Trạng thái</th>
                                     <th>Ngày</th>
@@ -204,7 +204,7 @@
                                     <td>452</td>
                                     <td><b>Devon Lane</b></td>
                                     <td>$948.55</td>
-                                    <td><span class="badge rounded-pill alert-success">Received</span></td>
+                                    <td><span class="badge rounded-pill alert-success">Đã giao</span></td>
                                     <td>07.05.2020</td>
                                     <td class="text-end">
                                         <a href="#" class="btn btn-light">Chi tiết</a>
@@ -223,7 +223,7 @@
                                     <td>789</td>
                                     <td><b>Guy Hawkins</b></td>
                                     <td>$0.00</td>
-                                    <td><span class="badge rounded-pill alert-danger">Cancelled</span></td>
+                                    <td><span class="badge rounded-pill alert-danger">Đã hủy</span></td>
                                     <td>25.05.2020</td>
                                     <td class="text-end">
                                         <a href="#" class="btn btn-light">Chi tiết</a>
@@ -242,7 +242,7 @@
                                     <td>478</td>
                                     <td><b>Leslie Alexander</b></td>
                                     <td>$293.01</td>
-                                    <td><span class="badge rounded-pill alert-warning">Pending</span></td>
+                                    <td><span class="badge rounded-pill alert-warning">Chờ xác nhận</span></td>
                                     <td>18.05.2020</td>
                                     <td class="text-end">
                                         <a href="#" class="btn btn-light">Chi tiết</a>
@@ -261,7 +261,7 @@
                                     <td>589</td>
                                     <td><b>Albert Flores</b></td>
                                     <td>$105.55</td>
-                                    <td><span class="badge rounded-pill alert-warning">Pending</span></td>
+                                    <td><span class="badge rounded-pill alert-warning">Chờ xác nhận</span></td>
                                     <td>07.02.2020</td>
                                     <td class="text-end">
                                         <a href="#" class="btn btn-light">Chi tiết</a>
@@ -280,7 +280,7 @@
                                     <td>345</td>
                                     <td><b>Eleanor Pena</b></td>
                                     <td>$779.58</td>
-                                    <td><span class="badge rounded-pill alert-success">Received</span></td>
+                                    <td><span class="badge rounded-pill alert-success">Đã giao</span></td>
                                     <td>18.03.2020</td>
                                     <td class="text-end">
                                         <a href="#" class="btn btn-light">Chi tiết</a>
@@ -299,7 +299,7 @@
                                     <td>456</td>
                                     <td><b>Dianne Russell</b></td>
                                     <td>$576.28</td>
-                                    <td><span class="badge rounded-pill alert-success">Received</span></td>
+                                    <td><span class="badge rounded-pill alert-success">Đã giao</span></td>
                                     <td>23.04.2020</td>
                                     <td class="text-end">
                                         <a href="#" class="btn btn-light">Chi tiết</a>
@@ -318,7 +318,7 @@
                                     <td>768</td>
                                     <td><b>Savannah Nguyen</b></td>
                                     <td>$589.99</td>
-                                    <td><span class="badge rounded-pill alert-success">Received</span></td>
+                                    <td><span class="badge rounded-pill alert-success">Đã giao</span></td>
                                     <td>18.05.2020</td>
                                     <td class="text-end">
                                         <a href="#" class="btn btn-light">Chi tiết</a>
@@ -337,7 +337,7 @@
                                     <td>977</td>
                                     <td><b>Kathryn Murphy</b></td>
                                     <td>$169.43</td>
-                                    <td><span class="badge rounded-pill alert-success">Received</span></td>
+                                    <td><span class="badge rounded-pill alert-success">Đã giao</span></td>
                                     <td>23.03.2020</td>
                                     <td class="text-end">
                                         <a href="#" class="btn btn-light">Chi tiết</a>
@@ -356,7 +356,7 @@
                                     <td>687</td>
                                     <td><b>Jacob Jones</b></td>
                                     <td>$219.78</td>
-                                    <td><span class="badge rounded-pill alert-success">Received</span></td>
+                                    <td><span class="badge rounded-pill alert-success">Đã giao</span></td>
                                     <td>07.05.2020</td>
                                     <td class="text-end">
                                         <a href="#" class="btn btn-light">Chi tiết</a>
@@ -380,38 +380,34 @@
             <div class="col-md-3">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="mb-3">Filter by</h5>
+                        <h5 class="mb-3">Bộ lọc</h5>
                         <form>
                             <div class="mb-4">
-                                <label for="order_id" class="form-label">Order ID</label>
+                                <label for="order_id" class="form-label">Mã</label>
                                 <input type="text" placeholder="Nhập tại đây" class="form-control" id="order_id">
                             </div>
                             <div class="mb-4">
-                                <label for="order_customer" class="form-label">Customer</label>
+                                <label for="order_customer" class="form-label">Tên khách hàng</label>
                                 <input type="text" placeholder="Nhập tại đây" class="form-control" id="order_customer">
                             </div>
                             <div class="mb-4">
-                                <label class="form-label">Order Trạng thái</label>
+                                <label class="form-label">Trạng thái</label>
                                 <select class="form-select">
                                     <option>Đã thêm</option>
                                     <option>Nháp</option>
                                 </select>
                             </div>
                             <div class="mb-4">
-                                <label for="order_total" class="form-label">Total</label>
+                                <label for="order_total" class="form-label">Giá</label>
                                 <input type="text" placeholder="Nhập tại đây" class="form-control" id="order_total">
                             </div>
                             <div class="mb-4">
-                                <label for="order_created_date" class="form-label">Date Added</label>
+                                <label for="order_created_date" class="form-label">Ngày lập đơn</label>
                                 <input type="text" placeholder="Nhập tại đây" class="form-control" id="order_created_date">
                             </div>
                             <div class="mb-4">
-                                <label for="order_modified_date" class="form-label">Date Modified</label>
+                                <label for="order_modified_date" class="form-label">Ngày sửa đổi</label>
                                 <input type="text" placeholder="Nhập tại đây" class="form-control" id="order_modified_date">
-                            </div>
-                            <div class="mb-4">
-                                <label for="order_customer_1" class="form-label">Customer</label>
-                                <input type="text" placeholder="Nhập tại đây" class="form-control" id="order_customer_1">
                             </div>
                         </form>
                     </div>

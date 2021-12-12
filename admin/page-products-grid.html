@@ -21,7 +21,27 @@
 
 </head>
 <body>
-
+<!-- * modal delete -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Xoá sản phẩm</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Bạn có chắc chắn muốn xoá sản phẩm này không?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+        <button type="button" class="btn btn-primary bg-danger" data-dismiss="modal">Đồng ý</button>
+      </div>
+    </div>
+  </div>
+</div>
 <b class="screen-overlay"></b>
 
 <aside class="navbar-aside" id="offcanvas_aside">
@@ -199,7 +219,7 @@
 			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-light">
 					<i class="material-icons md-edit"></i>  Sửa
 			</a>
-			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+			<a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-sm btn-outline-danger" >
 					<i class="material-icons md-delete_forever"></i>  Xóa
 			</a>
 		</div>
@@ -215,7 +235,8 @@
 			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-light">
 					<i class="material-icons md-edit"></i>  Sửa
 			</a>
-			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+      <!-- data-bs-toggle="dropdown" -->
+			<a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-sm btn-outline-danger">
 					<i class="material-icons md-delete_forever"></i>  Xóa
 			</a>
 		</div>
@@ -231,7 +252,7 @@
 			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-light">
 					<i class="material-icons md-edit"></i>  Sửa
 			</a>
-			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+			<a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-sm btn-outline-danger">
 					<i class="material-icons md-delete_forever"></i>  Xóa
 			</a>
 		</div>
@@ -247,7 +268,7 @@
 			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-light">
 					<i class="material-icons md-edit"></i>  Sửa
 			</a>
-			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+			<a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-sm btn-outline-danger">
 					<i class="material-icons md-delete_forever"></i>  Xóa
 			</a>
 		</div>
@@ -263,7 +284,7 @@
 			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-light">
 					<i class="material-icons md-edit"></i>  Sửa
 			</a>
-			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+			<a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-sm btn-outline-danger">
 					<i class="material-icons md-delete_forever"></i>  Xóa
 			</a>
 		</div>
@@ -279,7 +300,7 @@
 			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-light">
 					<i class="material-icons md-edit"></i>  Sửa
 			</a>
-			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+			<a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-sm btn-outline-danger">
 					<i class="material-icons md-delete_forever"></i>  Xóa
 			</a>
 		</div>
@@ -295,7 +316,7 @@
 			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-light">
 					<i class="material-icons md-edit"></i>  Sửa
 			</a>
-			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+			<a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-sm btn-outline-danger">
 					<i class="material-icons md-delete_forever"></i>  Xóa
 			</a>
 		</div>
@@ -311,7 +332,7 @@
 			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-light">
 					<i class="material-icons md-edit"></i>  Sửa
 			</a>
-			<a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+			<a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-sm btn-outline-danger">
 					<i class="material-icons md-delete_forever"></i>  Xóa
 			</a>
 		</div>
@@ -346,7 +367,7 @@
 
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-
+<script src="js/bootstrap.min.js"></script>
 <!-- Custom JS -->
 <script src="js/scriptc619.js?v=1.0"></script>
 
