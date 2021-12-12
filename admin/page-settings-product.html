@@ -17,6 +17,20 @@
   <!-- custom style -->
   <link href="css/uif9e3.css?v=1.1" rel="stylesheet" type="text/css"/>
   <link href="css/responsivef9e3.css?v=1.1" rel="stylesheet" />
+ <style>
+   input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 32px;
+	height: 20px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+ </style>
 
 </head>
 <body>
@@ -159,7 +173,9 @@
 <div class="card">
   <div class="card-body">
     <div class="row gx-5">
-      <aside class="col-lg-3 border-end">
+      <aside class="col-lg-3 border-end" style="position: sticky;
+      position: -webkit-sticky;
+      top: 10px; height: 450px;">
 
         <nav class="nav nav-pills flex-lg-column mb-4">
           <ul class="menu-aside">
@@ -175,7 +191,7 @@
               <div class="submenu">
                 <a href="page-settings-slide-qc.html">Silde quảng cáo</a>
                 <a href="page-settings-bo-suu-tap.html">Bộ sưu tập</a>
-                <a href="page-settings-cam-nhan.html">Cảm nhận</a>
+                <a href="page-settings-cam-nhan.html">Nhận xét</a>
                 <a href="page-settings-tin-tuc.html">Tin tức</a>
               </div>
             </li>
@@ -203,70 +219,150 @@
       </aside>
       <div class="col-lg-9">
         <section class="content-body p-xl-4">
+<!-- ------------dialog remove   start------------------   -->
+<!-- * modal delete -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Xoá sản phẩm</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Bạn có chắc chắn muốn xoá không?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+        <button type="button" class="btn btn-primary bg-danger">Đồng ý</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- ----------------- end ------------------------->
 
           <form>
 
           <div class="row border-bottom mb-4 pb-4">
-            <div class="col-md-5">
-              <h5>Tên trang web</h5>
-              <p class="text-muted" style="max-width:90%">
-                Các ngôn ngữ được hỗ trợ của tất cả các trang bao gồm từng sản phẩm</p>
+            <div class="col-md-7 box-kg" style="padding-right: 50px;">
+              <h5 class="pb-3">Khoảng giá</h5>
+                <div class="row border-bottom mt-4 box-price">
+                   
+                    <label class="col-xl-4 from-price">Từ 0đ</label>
+                    <label class="col-xl-1" style="text-align: center;">-</label>
+                    <label class="col-xl-4 to-price">  500.000₫</label>
+                    <label class="text-end col-xl-1">
+                        <div class="dropdown pb-3">
+                            <a href="#" data-bs-toggle="dropdown" class="border"> <i
+                                    class="material-icons md-more_horiz"></i> </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item edit-gia" >Chỉnh sửa</a>
+                                <a data-toggle="modal" data-target="#exampleModalCenter" class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                        </div> <!-- dropdown //end -->
+                    </label>
+                </div>
+
+                <div class="row border-bottom mt-4 box-price">    
+                  <label class="col-xl-4 from-price">Từ 1.000.000đ</label>
+                  <label class="col-xl-1" style="text-align: center;">-</label>
+                  <label class="col-xl-4 to-price">  5.000.000₫</label>
+                  <label class="text-end col-xl-1">
+                      <div class="dropdown pb-3">
+                          <a href="#" data-bs-toggle="dropdown" class="border"> <i
+                                  class="material-icons md-more_horiz"></i> </a>
+                          <div class="dropdown-menu">
+                              <a class="dropdown-item edit-gia" >Chỉnh sửa</a>
+                              <a data-toggle="modal" data-target="#exampleModalCenter" class="dropdown-item text-danger" href="#">Xóa</a>
+                          </div>
+                      </div> <!-- dropdown //end -->
+                  </label>
+              </div>
+              <div class="row border-bottom mt-4 box-price">
+                   
+                <label class="col-xl-4 from-price">Từ 6.000.000đ</label>
+                <label class="col-xl-1" style="text-align: center;">-</label>
+                <label class="col-xl-4 to-price">  10.000.000₫</label>
+                <label class="text-end col-xl-1">
+                    <div class="dropdown pb-3">
+                        <a href="#" data-bs-toggle="dropdown" class="border"> <i
+                                class="material-icons md-more_horiz"></i> </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item edit-gia" >Chỉnh sửa</a>
+                            <a data-toggle="modal" data-target="#exampleModalCenter" class="dropdown-item text-danger" href="#">Xóa</a>
+                        </div>
+                    </div> <!-- dropdown //end -->
+                </label>
+            </div>
+               
             </div> <!-- col.// -->
 
             
-            <div class="col-md-7">
+            <div class="col-md-5">
 
-                <div class="mb-3">
-                  <label class="form-label">Tiêu đề trang chủ</label>
-                  <input class="form-control" type="text" name="" placeholder="Type here">
+                <div class="mb-3" style="margin-top: 30px;">
+                  <label class="form-label">Từ</label>
+                  <input class="form-control gia-thap" type="number" name="" placeholder="Type here">
                 </div>
 
                 <div class="mb-3">
-                  <label class="form-label">Mô tả</label>
-                  <textarea type="text" class="form-control"></textarea>
+                  <label class="form-label">đến</label>
+                  <input class="form-control gia-cao" type="number" name="" placeholder="Type here">
                 </div>
-
+                <input class="btn btn-primary col-xl-4" type="button" id="add-kg" value="Thêm" ></input>  &nbsp;
+                <input class="btn btn-primary col-xl-4" type="button" id="cancel-kg" value="Hủy" style="display: none;"></input>  &nbsp;
+                <input class="btn btn-primary col-xl-4" type="button" id="thay-doi-kg" value="Thay đổi" style="display: none;"></input>  &nbsp;
             </div> <!-- col.// -->
           </div> <!-- row.// -->
+
           <div class="row border-bottom mb-4 pb-4">
             <div class="col-md-5">
-              <h5>Logo trang web </h5>
-              <p class="text-muted" style="max-width:90%">Logo được thiết lập cho toàn bộ trang web</p>
-            </div> <!-- col.// -->
-            <div class="col-md-7">
-              <div class="mb-3">
-                <label class="form-label">Chọn hình ảnh từ thiết bị (180x40)</label>
-                <input class="form-control" type="file">
+              <h5 class="pb-3">Kích thước </h5>
+              <input  type="checkbox"> <label class="col-xl-5 pb-3" >X</label>
+              <input type="checkbox"> <label class="col-xl-5 pb-3">M</label>
+              <input type="checkbox"> <label class="col-xl-5 pb-3">L</label>
+              <input type="checkbox"> <label class="col-xl-5 pb-3">XL</label>
+              <div class="col-xl-12 ">
+                <a data-toggle="modal" data-target="#exampleModalCenter"  class="btn col-xl-8 btn-sm btn-outline-danger">
+                  <i class="material-icons md-delete_forever"></i>  xóa
+              </a>
               </div>
-              <!-- <img src="" alt="" style="width: 180px; height: 40px;"> -->
-          
-            </div> <!-- col.// -->
-          </div> <!-- row.// -->
-
-          <div class="row border-bottom mb-4 pb-4">
-            <div class="col-md-5">
-              <h5>Truy cập </h5>
-              <p class="text-muted" style="max-width:90%">Cấp quyền truy cập vào tất cả các trang bao gồm từng sản phẩm</p>
+             
             </div> <!-- col.// -->
             <div class="col-md-7">
+             
+              <div class="mb-3 pb-4">
+                <label class="form-label pb-3">Kích thước</label>
+                <input class="form-control" type="text" name="" placeholder="Type here">
+              </div>    
+              <input class="btn btn-primary col-xl-4" type="button" value="Thêm"></input>  &nbsp;
+            </div> <!-- col.// -->
+          </div> <!-- row.// -->
 
-              <label class="mb-2 form-check">
-                  <input class="form-check-input" checked="" name="mycheck_a1" type="radio">
-                  <span class="form-check-label"> Tất cả đăng ký  được kích hoạt </span>
-              </label>
-              <label class="mb-2 form-check">
-                  <input class="form-check-input" name="mycheck_a1" type="radio">
-                  <span class="form-check-label"> Chỉ nhân viên được kích hoạt</span>
-              </label>
-               <label class="mb-2 form-check">
-                  <input class="form-check-input" name="mycheck_a1" type="radio">
-                  <span class="form-check-label"> chỉ admin được kích hoạt </span>
-              </label>
-               <label class="mb-2 form-check">
-                  <input class="form-check-input" name="mycheck_a1" type="radio">
-                  <span class="form-check-label">  Tạm ngừng kinh doanh cửa hàng </span>
-              </label>
+          <div class="row border-bottom mb-4 pb-4">
+            <div class="row col-md-5">
+              <h5 class="pb-3">Màu sắc</h5>
+              <div class="col-xl-6 pb-3"><input  type="checkbox"> <input type=color value="#ff0000"></div>
+              <div class="col-xl-6 pb-3"><input  type="checkbox"> <input type=color value="#fbff00"></div>
+              <div class="col-xl-6 pb-3"><input  type="checkbox"> <input type=color value="#000"></div>
+                <div class="col-xl-6 pb-3"><input  type="checkbox"> <input type=color value="#00ff11"></div>
+              <div class="col-xl-12">
+                <a data-toggle="modal" data-target="#exampleModalCenter"  class="btn col-xl-9 btn-sm btn-outline-danger">
+                  <i class="material-icons md-delete_forever"></i>  xóa
+              </a>
+              </div>
+             
+            </div> <!-- col.// -->
+            <div class="col-md-7" style="margin-left: 20px;">
+
+              <div class="mb-3 pb-4">
+                <label class="form-label pb-3">Màu sắc</label>
+                <div class="col-xl-12 pb-3"> <input type=color value="#000"></div>
+              </div>    
+              <input class="btn btn-primary col-xl-4" type="button" value="Thêm"></input>  &nbsp;
 
             </div> <!-- col.// -->
           </div> <!-- row.// -->
@@ -275,77 +371,34 @@
 
           <div class="row border-bottom mb-4 pb-4">
             <div class="col-md-5">
-              <h5>Thông báo  </h5>
+              <h5>Số lượng</h5>
               <p class="text-muted" style="max-width:90%">
-              cài đặt thông báo cho admin khi có yêu cầu khách hàng </p>
+              Số lượng sản phẩm trong 1 trang hiển thị</p>
             </div>
             <div class="col-md-7">
-
-
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="" id="mycheck_notify" checked>
-                <label class="form-check-label" for="mycheck_notify">
-                  Gửi thông báo về mỗi lần đăng ký người dùng
-                </label>
+              <div class="mb-3 pb-4">
+                <label class="form-label pb-3">Số lượng</label>
+                <input class="form-control" type="number" min="1" name="" placeholder="Type here">
               </div>
+              <input class="btn btn-primary col-xl-4" type="button" value="Chỉnh sửa"></input>  &nbsp;
 
-              <div class="mb-3">
-                <input class="form-control" placeholder="Text">
-              </div>
-
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="" id="mycheck_notify" checked>
-                <label class="form-check-label" for="mycheck_notify">
-                Gửi thông báo về mỗi khi có người đặt hàng
-                </label>
-              </div>
-
-              <div class="mb-3">
-                <input class="form-control" placeholder="Text">
-              </div>
-
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="" id="mycheck_notify" checked>
-                <label class="form-check-label" for="mycheck_notify">
-                  Gửi thông báo về mỗi khi có người  muốn hủy đơn hàng
-                </label>
-              </div>
-
-              <div class="mb-3">
-                <input class="form-control" placeholder="Text">
-              </div>
             </div> <!-- col.// -->
           </div> <!-- row.// -->
 
 
           <div class="row border-bottom mb-4 pb-4">
             <div class="col-md-5">
-              <h5>Tiền tệ</h5>
-              <p class="text-muted" style="max-width:90%">Tiền tệ được sử dụng trong trang web</p>
+              <h5>Xắp xếp</h5>
+              <p class="text-muted" style="max-width:90%">Xếp xếp cách hiện của trang sản phẩm</p>
             </div> <!-- col.// -->
-            <div class="col-md-7">
+            <div class="row col-md-7">
+             <div class="col-md-12">  <input checked type="checkbox"> <label  class="col-xl-7 pb-3" >Sản phẩm bán chạy nhất</label> </div>
+             <div class="col-md-12">  <input checked type="checkbox"> <label class="col-xl-7 pb-3" >Xắp xếp từ A-Z</label> </div>
+             <div class="col-md-12">  <input checked type="checkbox"> <label class="col-xl-7 pb-3" >Xắp xếp từ Z-A</label> </div>
+             <div class="col-md-12">  <input checked type="checkbox"> <label class="col-xl-7 pb-3" >Xắp xếp giá từ thấp đến cao</label> </div>
+             <div class="col-md-12">  <input checked type="checkbox"> <label class="col-xl-7 pb-3" >Xắp xếp giá từ cao đến thấp</label> </div>
 
-              <div class="mb-3" style="max-width: 200px">
-                <label class="form-label">Tiền tệ chính</label>
-                <select class="form-select">
-                  <option>US Dollar</option>
-                  <option>EU Euro</option>
-                  <option>RU Ruble</option>
-                  <option>Việt nam đồng</option>
-                </select>
-              </div>
-
-              <div class="mb-3" style="max-width: 200px">
-                <label class="form-label">Tiền tệ thay thế</label>
-                <select class="form-select">
-                  <option>US dollar</option>
-                  <option>RUBG russia</option>
-                  <option>INR india</option>
-                  <option>Việt nam đồng</option>
-
-                </select>
-              </div>
-
+            
             </div> <!-- col.// -->
           </div> <!-- row.// -->
           <button class="btn btn-primary" type="submit">Xem demo</button>  &nbsp;
@@ -377,8 +430,9 @@
 
 <!-- Custom JS -->
 <script src="js/scriptc619.js?v=1.0" type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>
 
-
+<script src="js/settting_product.js"></script>
 </body>
 
 <!-- Mirrored from www.ecommerce-admin.com/demo/page-settings-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Dec 2021 02:39:05 GMT -->
