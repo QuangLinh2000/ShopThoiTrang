@@ -153,16 +153,17 @@
 <section class="content-main">
 
   <div class="content-header">
-    <h2 class="content-title">Tùy chỉnh trang </h2>
+    <h2 class="content-title">Site settings </h2>
   </div>
 
 <div class="card">
   <div class="card-body">
     <div class="row gx-5">
-      <aside class="col-lg-3 border-end">
+      <aside class="col-lg-3 border-end" style="position: sticky;
+      position: -webkit-sticky;
+      top: 10px; height: 450px;">
 
         <nav class="nav nav-pills flex-lg-column mb-4">
-
           <ul class="menu-aside">
             <li class="menu-item  active">
               <a class="menu-link" href="page-settings-2.html">
@@ -176,7 +177,7 @@
               <div class="submenu">
                 <a href="page-settings-slide-qc.html">Silde quảng cáo</a>
                 <a href="page-settings-bo-suu-tap.html">Bộ sưu tập</a>
-                <a href="page-settings-cam-nhan.html">Cảm nhận</a>
+                <a href="page-settings-cam-nhan.html">Nhận xét</a>
                 <a href="page-settings-tin-tuc.html">Tin tức</a>
               </div>
             </li>
@@ -198,7 +199,7 @@
             </li>
            
           </ul>
-
+        
         </nav>
 
       </aside>
@@ -208,167 +209,99 @@
 
           <form>
 
-          <div class="row border-bottom mb-4 pb-4">
+          <div class="row border-bottom mb-4 pb-3">
             <div class="col-md-5">
-
-              <h5>Tên trang web</h5>
-
-              <p class="text-muted" style="max-width:90%">
-                Các ngôn ngữ được hỗ trợ của tất cả các trang bao gồm từng sản phẩm</p>
+              <h5 class="pb-3" style="text-align: center; margin-right: 25px;">Bộ sưu tập 1</h5>
+              <div class="row" >
+                <div class="col-xl-10">
+                 <div class="col">
+                   <div class="card card-product-grid">
+                     <a   href="#" class="img-wrap"> <img id="img-1" src="../img/collection_1_1.jpg" alt="Product"> </a>
+                     <div class="info-wrap row">
+                      
+   
+                     </div>
+                   </div> <!-- card-product  end// -->
+                 </div> <!-- col.// -->
+                </div>
+ 
+             </div>
             </div> <!-- col.// -->
 
             
             <div class="col-md-7">
 
-                <div class="mb-3">
-                  <label class="form-label">Tiêu đề trang chủ</label>
-                  <input class="form-control" type="text" name="" placeholder="Type here">
-
+                <div class="mb-3 ">
+                  <label class="form-label col-xl-5  pb-3">Tiêu đề</label>
+                  <a  onclick="edit(1)" class="btn btn-sm btn-light">
+                    <i class="material-icons md-edit"></i>  Chỉnh sửa
+                </a>
+                  <a  onclick="clear_all(1)"  class="btn col-xl-3 btn-sm btn-outline-danger clear-1" style="margin-left: 15px; visibility: hidden;">
+                    <i  class="material-icons md-delete_forever" ></i>  Clear
+                </a>
+                  <input disabled class="form-control" id="tilte-1" type="text" name="" value="SEVEN.AM - FANTASIA DESERT" placeholder="Type here">
                 </div>
 
-                <div class="mb-3">
-                  <label class="form-label">Mô tả</label>
-                  <textarea type="text" class="form-control"></textarea>
+                <div class="mb-3 pb-3">
+                  <label class="form-label pb-2">Mô tả</label>
+                  <textarea type="text" disabled rows="6" id="dicription-1" class="form-control pb-4">Dành riêng cho tháng 11, tháng của sự tôn vinh và lòng biết ơn, Seven.AM gửi tới chị em bộ sưu tập mới Fantasia Desert - một bản phối cuốn hút với vẻ đẹp trang nhã, thanh lịch và sang trọng.</textarea>
+                </div>
+
+                <div class="mb-3 ">
+                  <input style="visibility: hidden;"  class="form-control" id="file-upload-1" accept=".jpg, .png" type="file">
                 </div>
 
             </div> <!-- col.// -->
           </div> <!-- row.// -->
-          <div class="row border-bottom mb-4 pb-4">
+         
+         
+          <div class="row border-bottom mb-4 pb-3">
             <div class="col-md-5">
-              <h5>Logo trang web </h5>
-              <p class="text-muted" style="max-width:90%">Logo được thiết lập cho toàn bộ trang web</p>
+              <h5 class="pb-3" style="text-align: center; margin-right: 25px;">Bộ sưu tập 2</h5>
+              <div class="row" >
+                <div class="col-xl-10">
+                 <div class="col">
+                   <div class="card card-product-grid">
+                     <a   href="#" class="img-wrap"> <img id="img-2" src="../img/collection_1_1.jpg" alt="Product"> </a>
+                     <div class="info-wrap row">
+                      
+   
+                     </div>
+                   </div> <!-- card-product  end// -->
+                 </div> <!-- col.// -->
+                </div>
+ 
+             </div>
             </div> <!-- col.// -->
-            <div class="col-md-7">
-              <div class="mb-3">
-                <label class="form-label">Chọn hình ảnh từ thiết bị (180x40)</label>
-                <input class="form-control" type="file">
-              </div>
-              <!-- <img src="" alt="" style="width: 180px; height: 40px;"> -->
-          
-            </div> <!-- col.// -->
-          </div> <!-- row.// -->
 
-          <div class="row border-bottom mb-4 pb-4">
-            <div class="col-md-5">
-
-              <h5>Truy cập </h5>
-              <p class="text-muted" style="max-width:90%">Cấp quyền truy cập vào tất cả các trang bao gồm từng sản phẩm</p>
-
-            </div> <!-- col.// -->
-            <div class="col-md-7">
-
-              <label class="mb-2 form-check">
-                  <input class="form-check-input" checked="" name="mycheck_a1" type="radio">
-
-                  <span class="form-check-label"> Tất cả đăng ký  được kích hoạt </span>
-              </label>
-              <label class="mb-2 form-check">
-                  <input class="form-check-input" name="mycheck_a1" type="radio">
-                  <span class="form-check-label"> Chỉ nhân viên được kích hoạt</span>
-              </label>
-               <label class="mb-2 form-check">
-                  <input class="form-check-input" name="mycheck_a1" type="radio">
-                  <span class="form-check-label"> chỉ admin được kích hoạt </span>
-              </label>
-               <label class="mb-2 form-check">
-                  <input class="form-check-input" name="mycheck_a1" type="radio">
-                  <span class="form-check-label">  Tạm ngừng kinh doanh cửa hàng </span>
-
-              </label>
-
-            </div> <!-- col.// -->
-          </div> <!-- row.// -->
-
-
-
-          <div class="row border-bottom mb-4 pb-4">
-            <div class="col-md-5">
-
-              <h5>Thông báo  </h5>
-
-              <p class="text-muted" style="max-width:90%">
-              cài đặt thông báo cho admin khi có yêu cầu khách hàng </p>
-            </div>
+            
             <div class="col-md-7">
 
+                <div class="mb-3 ">
+                  <label class="form-label col-xl-5  pb-3">Tiêu đề</label>
+                  <a onclick="edit(2)" class="btn btn-sm btn-light">
+                    <i class="material-icons md-edit"></i>  Chỉnh sửa
+                </a>
+                  <a  onclick="clear_all(2)" class="btn col-xl-3 btn-sm btn-outline-danger clear-2" style="margin-left: 15px; visibility: hidden;">
+                    <i class="material-icons md-delete_forever"></i>  Clear
+                </a>
+                  <input class="form-control" disabled id="tilte-2" value="SEVEN.AM - AUTUM SYMPHONY" type="text" name="" placeholder="Type here">
+                </div>
 
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="" id="mycheck_notify" checked>
-                <label class="form-check-label" for="mycheck_notify">
-                  Gửi thông báo về mỗi lần đăng ký người dùng
-                </label>
-              </div>
+                <div class="mb-3 pb-3">
+                  <label class="form-label pb-2">Mô tả</label>
+                  <textarea type="text" disabled id="dicription-2" rows="6" class="form-control pb-4">Shall We DanceVũ khúc của mùa thu như đang nhảy múa trên những thiết kế đầy cuốn hút của Shall We Dance với gam màu nâu vàng chủ đạo cùng họa tiết cách điệu trang nhã.</textarea>
+                </div>
 
-              <div class="mb-3">
-                <input class="form-control" placeholder="Text">
-              </div>
-
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="" id="mycheck_notify" checked>
-                <label class="form-check-label" for="mycheck_notify">
-                Gửi thông báo về mỗi khi có người đặt hàng
-
-                </label>
-              </div>
-
-              <div class="mb-3">
-                <input class="form-control" placeholder="Nhập">
-              </div>
-
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="" id="mycheck_notify" checked>
-                <label class="form-check-label" for="mycheck_notify">
-                  Gửi thông báo về mỗi khi có người  muốn hủy đơn hàng
-                </label>
-              </div>
-
-              <div class="mb-3">
-                <input class="form-control" placeholder="Text">
-              </div>
-            </div> <!-- col.// -->
-          </div> <!-- row.// -->
-
-
-          <div class="row border-bottom mb-4 pb-4">
-            <div class="col-md-5">
-
-              <h5>Tiền tệ</h5>
-              <p class="text-muted" style="max-width:90%">Tiền tệ được sử dụng trong trang web</p>
-
-            </div> <!-- col.// -->
-            <div class="col-md-7">
-
-              <div class="mb-3" style="max-width: 200px">
-
-                <label class="form-label">Tiền tệ chính</label>
-
-                <select class="form-select">
-                  <option>US Dollar</option>
-                  <option>EU Euro</option>
-                  <option>RU Ruble</option>
-                  <option>Việt nam đồng</option>
-                </select>
-              </div>
-
-              <div class="mb-3" style="max-width: 200px">
-                <label class="form-label">Tiền tệ thay thế</label>
-
-                <select class="form-select">
-                  <option>US dollar</option>
-                  <option>RUBG russia</option>
-                  <option>INR india</option>
-                  <option>Việt nam đồng</option>
-
-                </select>
-              </div>
+                <div class="mb-3 ">
+                  <input style="visibility: hidden;" class="form-control" id="file-upload-2" accept=".jpg, .png" type="file">
+                </div>
 
             </div> <!-- col.// -->
           </div> <!-- row.// -->
-
           <button class="btn btn-primary" type="submit">Xem demo</button>  &nbsp;
           <button class="btn btn-primary" type="submit">Lưu tất cả thay đổi</button>  &nbsp;
-          <button class="btn btn-outline-danger" type="reset">Cài lại</button>
-
+          <button class="btn btn-outline-danger" type="reset">Reset</button>
 
           </form>
 
@@ -395,7 +328,7 @@
 
 <!-- Custom JS -->
 <script src="js/scriptc619.js?v=1.0" type="text/javascript"></script>
-
+ <script src="js/setting_bo_suu_tap.js"></script>
 
 </body>
 

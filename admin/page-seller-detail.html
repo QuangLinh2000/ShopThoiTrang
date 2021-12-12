@@ -153,7 +153,10 @@
 <section class="content-main">
 
 <div class="content-header">
-    <a href="javascript:history.back()" class="btn btn-light"><i class="material-icons md-arrow_back"></i> Quay lại</a>
+
+    <a href="#" class="btn btn-light"><i class="material-icons md-arrow_back"></i> Trước </a>
+    <a href="#" class="btn btn-light">Sau <i class="material-icons md-arrow_back" style="transform: rotateY(180deg);"></i></a>
+
 </div>
 
 <div class="card mb-4">
@@ -164,34 +167,64 @@
     <div class="row">
       <div class="col-xl col-lg flex-grow-0" style="flex-basis:230px">
         <div class="img-thumbnail shadow w-100 bg-white position-relative text-center" style="height:190px; width:200px; margin-top:-120px">
-          <img src="images/people/avatar1.jpg" class="center-xy img-fluid" alt="Logo Brand">
+          <img src="images/people/avatar1.jpg" class="center-xy img-fluid" alt="Logo Employee">
         </div>
       </div> <!--  col.// -->
       <div class="col-xl col-lg">
         <h3>Alexander</h3>
-        <p>Giới tính: Nữ  <span> Tuổi: 20</span>
+        <p>Khu phố 6, phường Linh Trung <br>Thành phố Thủ Đức , Thành phố Hồ Chí Minh , Việt Nam <span>
         </p>
 
       </div> <!--  col.// -->
+        <div class="col-xl-4 text-md-end">
+            <select class="form-select w-auto d-inline-block">
+                <option>Trạng thái</option>
+                <option>Đang làm</option>
+                <option>Nghỉ làm</option>
+                <option>Tạm nghỉ</option>
+                <option>Vô hiệu</option>
+            </select>
+            <a href="#" class="btn btn-outline-primary"> Chỉnh sửa</i> </a>
+        </div> <!--  col.// -->
     </div> <!-- card-body.// -->
     <hr class="my-4">
     <div class="row g-4">
-      <div class="col-sm-6 col-lg-4 col-xl-3">
-        <h6>Liên hệ</h6>
-        <p>
-          Quản lý: Jerome Bell <br>
-          info@example.com <br>
-          (229) 555-0109, (808) 555-0111
-        </p>
-      </div> <!--  col.// -->
-      <div class="col-sm-6 col-lg-4 col-xl-3">
-        <h6>Địa chỉ</h6>
-        <p>
-          Tỉnh/Thành phố: California <br>
-          Địa chỉ: Ranchview Dr. Richardson <br>
-          Postal code: 62639
-        </p>
-      </div> <!--  col.// -->
+
+        <div class="col-md-12 col-lg-4 col-xl-2">
+            <article class="box">
+                <p class="mb-0 text-muted">Ngày vào làm</p>
+                <h5 class="text-success">20/12/2020</h5>
+                <p class="mb-0 text-muted">Lương</p>
+                <h5 class="text-success mb-0">10.000.000đ</h5>
+            </article>
+        </div> <!--  col.// -->
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+            <h6>Liên hệ</h6>
+            <p>
+                <span id="manager">Người quản lý: Admin</span>
+                <span id="email">19130249@st.hcmuaf.edu.vn</span><br>
+                <span id="tel">0999999999</span> <br>
+            </p>
+        </div> <!--  col.// -->
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+            <h6>Thông tin nhân viên</h6>
+            <p>
+                <span id="sex">Giới tính: Nữ</span><br>
+                <span id="cccd">CCCD/CMND: 1234567890</span><br>
+                <span id="id-role">Chức vụ: nhân viên</span><br>
+                <span id="date-employee">Ngày sinh: 20/11/1999</span><br>
+
+            </p>
+        </div> <!--  col.// -->
+        <div class="col-sm-6  col-lg-4 col-xl-4">
+            <h6>Ghi chú</h6>
+            <p>
+                lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+            </p>
+        </div> <!--  col.// -->
+
     </div> <!--  row.// -->
 </div> <!--  card-body.// -->
 </div> <!--  card.// -->
