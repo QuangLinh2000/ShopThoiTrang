@@ -13,6 +13,7 @@ footer {
 
 .footer-content {
   display: flex;
+  flex-wrap: wrap;
   border-bottom: solid black 1px;
   padding-bottom: 20px;
   justify-content: space-evenly;
@@ -73,7 +74,7 @@ footer {
 }
 .footer-content-item-image img {
   margin-top: 20px;
-  width: 100%;
+  width: 300px;
   height: 150px;
 }
 .footer-content-item-focuse {
@@ -159,4 +160,20 @@ footer {
   width: 100%;
   height: 50px;
   background-color: white;
+}
+/* Responsive   */
+@media only screen and (max-width: 800px) {
+  .footer-content-item-input,.footer-content-item-image img{
+    margin-left: 20%;
+  }
+  .footer-content-item-rigeter p{
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 30px;
+
+  }
+  .footer-content-item-title{
+    margin-top: 30px;
+    text-align: center;
+  }
 }
