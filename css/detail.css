@@ -13,6 +13,7 @@
     --line-height-21:21px;
     --blur-text:#434242;
 }
+
 html{
     font-family:"Quicksand", sans-serif;;
 }
@@ -22,6 +23,10 @@ body{
     font-size: var(--medium-font-size);
 
 }
+
+
+
+
 li{
 list-style: none;
 }
@@ -59,6 +64,7 @@ list-style: none;
 .detail{
 width: 100%;
 display: flex;
+justify-content: space-between;
 padding: 50px 30px;
 border-top: 1px solid rgb(224, 221, 221);
 margin-top: 10px;
@@ -66,7 +72,7 @@ margin-top: 10px;
 
 .detail__image{
     max-height: 603px;
-width: 60%;
+width: 50%;
 display: flex;
 }
 #image__left{
@@ -170,7 +176,7 @@ display: block;
     height: 100%;
 }
 .detail__infor{
-width: 40%;
+width: 50%;
 }
 .detail__infor .infor__head .product__title h1{
     font-size: 20px;
@@ -220,9 +226,6 @@ margin-bottom: var(--margin-bottom-10);
    
 }
 
-.infor__body .product__size{
-
-}
 .product__header{
     font-weight: bold ;
     font-size: 14px;
@@ -626,9 +629,7 @@ position: relative;
 
 }
 
-.wrap__price{
 
-}
 
 .curren-price{
     color: #070707;
@@ -803,18 +804,14 @@ cursor: pointer;
     font-size: var(--small-font-size);
     color: #070707;
 }
-.form__table .table__price-bill{
 
-}
 .form__table .table__amount input{
     border: 1px solid #e7e7e7;
     max-width: 100%;
     padding: 8px 10px;
     border-radius: 3px;
 }
-.form__table .table__price{
-  
-}
+
 .form__table .table__delete-element{
 text-align: center;
 
@@ -873,4 +870,36 @@ border: none;
     padding: 0 15px;
     border: none;
     }
+        /* Tablet & mobile */
+        @media only screen and (max-width:63.9375em){
+    
+        }
+        /*Tablet*/
+        @media only screen and (min-width:46.25em) and (max-width:63.9375em) {
+            .detail__image{
+                flex-direction: column-reverse;
+                width: 40%;
+            }
+            .detail__image #image__left{
+                width: 100%;
+    
+            }
+            #image__left .image__left__item{
+                width: 50%;
+            }
+            #image__right{
+                width: 100%;
+            }
+            #image__right #image__right__element{
+                
+            }
+            .image__left__list{
+                display: flex;
+    
+            }
+        }
+        /* Mobile */
+         @media only screen and (max-width:46.1875em){
+    
+         }
 
