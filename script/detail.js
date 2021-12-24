@@ -73,16 +73,16 @@ settingImageLeft(product)
 //chỉnh lại view khi kích thước trang thay đổi
 let slideWrap=document.querySelector(".wrap__list__box");
 function resizeWindow(){
-
-if((window.outerWidth>1150)){
+console.log(window.innerWidth)
+if((window.innerWidth>1150)){
     numWrapSlide=4
     replaceClassWrap("wrap__element")
 }
-else if(window.outerWidth>900){
+else if(window.innerWidth>900){
     numWrapSlide=3
     replaceClassWrap("wrap__element-tablet")
 }
-else if(window.outerWidth>600) {
+else if(window.innerWidth>600) {
     numWrapSlide=2
 replaceClassWrap("wrap__element-large-phone")
 }
@@ -90,6 +90,7 @@ else {
    replaceClassWrap("wrap__element-mobile") ;
    numWrapSlide=1;}
 }
+resizeWindow();
 // điều chỉnh khu vực các sản phẩm liên quan dựa vào class name
 function replaceClassWrap(className){
 
@@ -102,7 +103,7 @@ function settingRelatedProduct(listRelatedProduct,className){
     for(var i=0;i<listRelatedProduct.length;i++){
         var related=listRelatedProduct[i]
         let wrapElement=document.createElement('li')
-        wrapElement.className=className+"";
+        wrapElement.classList+=className+"";
 
 
 
@@ -132,8 +133,7 @@ function settingRelatedProduct(listRelatedProduct,className){
                     </div>
 
                     ` + checkAvailable(related);
-                    console.log(wrapElement)
-                    console.log(slideWrap)
+          
 
                     slideWrap.appendChild(wrapElement)
     }
@@ -485,7 +485,5 @@ if(form.classList.contains("action-flex")) {
 else{
 form.firstElementChild.style.animation="modalFadeIn  ease-in 0.4s"
 form.classList.add("action-flex")
-
-
 }
 }

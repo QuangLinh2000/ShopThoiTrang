@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body onresize="resizeWindow()">
+    
     <header id="header">
         <div id="header-first">
             <div class="container">
@@ -556,6 +558,9 @@
     </header>
     <section class="detail">
         <div class="detail__image">
+            <div id="image__right">
+                <div id="image__right__element"></div>
+            </div>
             <div id="image__left">
                 <ul class="image__left__list">
 
@@ -563,9 +568,7 @@
                 <div class="up text-center" onclick="changeImage(-1)"><i class="fas fa-angle-up"></i></div>
                 <div class="down text-center" onclick="changeImage(1)"><i class="fas fa-angle-down"></i></div>
             </div>
-            <div id="image__right">
-                <div id="image__right__element"></div>
-            </div>
+            
         </div>
         <div class="detail__infor">
 
