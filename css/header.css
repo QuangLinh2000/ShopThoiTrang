@@ -352,12 +352,12 @@ body {
     align-items: center;
 }
 #header-mobile .nav-list .nav-item {
-    font-size: 22px;
+    font-size: 20px;
 }
 #header-mobile .nav-bar .nav-list {
     flex-wrap: nowrap;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 70px;
 }
 #header-mobile .nav-bar {
     width: 100%;
@@ -365,8 +365,11 @@ body {
 #header-mobile #icon-close {
     position: absolute;
     padding: 10px;
-    right: 10px;
-    top: 0;
+    left: 21px;
+    top: 10px;
+}
+#header-mobile #icon-close i {
+    font-size: 38px;
 }
 #header-mobile .nav-item .sub-nav {
     position: static;
@@ -391,10 +394,11 @@ body {
     opacity: 0.8;
 }
 #header-mobile #nav-bar-active {
-    display: none;
+    transform: translateX(-100%);
+    transition: 0.4s;
 }
 #header-mobile #nav-bar-active.active-mobile {
-    display: block;
+    transform: translateX(0);
 }
 /* =================================================responsive==================================== */
 /* responsive web  */
