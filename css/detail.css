@@ -303,9 +303,10 @@ margin-bottom: 0.3125em;
 .product__amount__form .decrease, .product__amount__form .increase{
 display: block;
 position: absolute;
-padding: 0 px;
+padding: 0px;
 border: 0 none;
 height: 100%;
+width: 20px;
 background-color: #fff;
 top: 0;
 
@@ -919,6 +920,7 @@ border: none;
                 
                 transform: translate(-100%,-50%) rotateZ(270deg) ;
                 left: 100%;
+                
             }
 
         }
@@ -930,11 +932,11 @@ border: none;
         align-items: center;
     }
     .detail__image{
-        width: 80%;
+        width: 90%;
         margin-top: 1.875em;
     }
     .detail__infor{
-        width: 80%;
+        width: 90%;
     }
     #image__right:hover .img-zoom-lens{
         display:none;
@@ -948,5 +950,6 @@ border: none;
         @media only screen and (min-width:46.25em) and (max-width:63.9375em) {
 
         }
+ 
 
 

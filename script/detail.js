@@ -73,7 +73,7 @@ settingImageLeft(product)
 //chỉnh lại view khi kích thước trang thay đổi
 let slideWrap=document.querySelector(".wrap__list__box");
 function resizeWindow(){
-console.log(window.innerWidth)
+    
 if((window.innerWidth>1150)){
     numWrapSlide=4
     replaceClassWrap("wrap__element")
@@ -102,13 +102,9 @@ settingRelatedProduct(listRelatedProduct,className)
 function settingRelatedProduct(listRelatedProduct,className){
     for(var i=0;i<listRelatedProduct.length;i++){
         var related=listRelatedProduct[i]
-        let wrapElement=document.createElement('li')
+        let wrapElement=document.createElement('li');
         wrapElement.classList+=className+"";
-
-
-
         wrapElement.innerHTML=`<div class="wrap__element__image"> <img src="../img/${related.productID}/${related.image[0]}" alt="">
-
                     <div class="clear-fix">
                         <a href="https://nemshop.vn/collections/tat-ca-san-pham/products/ao-khoac-2710" class="detail__link"></a>
                         <div class="advise-box">
@@ -121,9 +117,7 @@ function settingRelatedProduct(listRelatedProduct,className){
                         <a class="text-center" href=""> ${related.title}</a>
                     </div>
                     <div class="wrap__price text-center">
-
-                    `+ checkSale(related)+`
-                       
+                    `+ checkSale(related)+`            
                 </div>`;
                         `+ checkSale(related)'+
 
@@ -207,59 +201,27 @@ amountLabel.innerHTML=amount;
 
 
 function createaE(product){
-    let main=document.querySelector(".detail__infor");
-    main.innerHTML=` <div class="infor__head">
-        <div class="product__title">
+    let inforHead=document.querySelector(".infor__head");
+    inforHead.innerHTML=`<div class="product__title">
             <h1>${product.title}</h1>
         </div>
         <div class="product__trademark">
-
             <span>${product.trademark}</span>
         </div>
         <div class="product__id">
-
             <span>Mã SP: ${product.productID}</span>
-        </div>
-    </div>
-    <div class="infor__body">
-        <div class="product__price">
-
-        </div>
-        <div class="product__size">
-
-
-        </div>
-        <div class="product__color">
-
-
-        </div>
-
-
-    </div>
-    <div class="infor__footer">
-        <div class="product__amount">
-
-        </div>
-
-    </div>
-    <div class="decriptions">
-
-    </div>`;
+        </div>`
     //Thêm giá
 
     let productPrice=document.querySelector(".product__price")
     if(product.sale>0){
-        productPrice.innerHTML=` <span>`+convertPrice( product.price*product.sale/100) + `₫</span>
+        productPrice.innerHTML=`<span>`+convertPrice( product.price*product.sale/100) + `₫</span>
         <div class="product__price__sale"><s>`+convertPrice(product.price) +`₫</s> </div>
         <div class="product__percent__sale"> <span>${product.sale}%</span>
-
             </div>
         `;
     }
     else productPrice.innerHTML=` <span>`+convertPrice(product.price) + `₫</span>`
-
-
-
     //thêm kích thước, màu sắc , số lượng dựa theo số lượng hàng có sẵn tại shop
     if(product.available>0){
     let productSize=document.querySelector(".product__size")
@@ -323,25 +285,8 @@ function createaE(product){
     productColor.appendChild(productColorElements)
 
     // thêm bộ chọn số lượng
-    let inforFooter=document.querySelector(".infor__footer")
-
-    inforFooter.innerHTML=`
-    <div class="product__amount">
-    <div class="product__header">Số lượng</div>
-            <div class="product__amount__form">
-                <button class="decrease" onclick='changeAmount(-1)''><i class="fas fa-chevron-left"></i></button>
-                <label class="amount-num text-center">${amount}</label>
-
-                <button class="increase" onclick='changeAmount(1)'><i class="fas fa-chevron-right"></i></button>
-            </div>
-
-    </div>
-    <div class="add-cart text-center">
-            <button class="add-cart__button" onclick="activeForm()">THÊM VÀO GIỎ</button>
-        </div>
-        <div class="buy-now text-center">
-            <button class="buy-now__button">MUA NGAY</button>
-        </div>`
+    let amountLabel=document.querySelector(".amount-num");
+    amountLabel.innerHTML=`${amount}`;
 }
 else {
     let inforFooter=document.querySelector(".infor__footer")
@@ -387,9 +332,15 @@ showList(indexOfImage);
 leftToRightSupport('<img class="image__right__element" src="../img/321691492193020636/1.jpg" alt="Front">');
 
     // nhấn ảnh bên trái thì bên phải đổi ảnh
-
+    console.log(indexOfImage)
 function changeImage(index1){
-    showList(indexOfImage += index1);
+    indexOfImage += index1
+    if(indexOfImage>product.image.length-2) indexOfImage=0;
+    if(indexOfImage<0) indexOfImage=product.image.length-2;
+    console.log(indexOfImage)
+    showList(indexOfImage);
+    
+    
 }
 // sự kiện pull up(down) trong danh sách ảnh
 function showList(index1){
@@ -410,6 +361,8 @@ function leftToRightSupport(url){
     rightImage.innerHTML=''+url;
 }
 // zoom ảnh
+
+
 function imageZoom() {
     var cx, cy;
     cx =3;
@@ -469,8 +422,8 @@ y = y - window.pageYOffset;
 return {x : x, y : y};
 }
 }
-imageZoom();
 
+imageZoom();
 
 function activeForm(){
 let form=document.querySelector(".form")
@@ -487,3 +440,5 @@ form.firstElementChild.style.animation="modalFadeIn  ease-in 0.4s"
 form.classList.add("action-flex")
 }
 }
+
+
