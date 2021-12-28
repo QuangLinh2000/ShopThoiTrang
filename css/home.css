@@ -814,3 +814,6 @@
 #tab-home .container {
     overflow-x: hidden;
 }
+.btn-img-buy a {
+    color: #fff;
+}
