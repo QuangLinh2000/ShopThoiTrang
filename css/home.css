@@ -518,7 +518,7 @@
 }
 .customer-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 .customer-item {
     position: relative;
@@ -731,14 +731,86 @@
         flex-direction: column;
         row-gap: 15px;
     }
+    .slide-collection .btn-img-search,
+    .slide-collection .btn-img-cart,
+    .slide-collection .btn-img-buy {
+        opacity: 0.7;
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+    .slide-collection .list-image-hover {
+        display: none;
+    }
+    .slide-collection:hover .text-content-collection {
+        margin-bottom: 10px;
+    }
+    .slide-collection .text-content-collection {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    #home-customer .customer-item {
+        transform: scale(1);
+    }
+    #home-customer .customer-item .bg-color {
+        opacity: 0;
+    }
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 768px) {
     .list-tab-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .customer-grid {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media screen and (max-width: 600px) {
+    .container {
+        padding: 0px 20px;
+    }
     .list-tab-content {
         grid-template-columns: repeat(1, 1fr);
     }
+    .slideshow-collection {
+        width: 100%;
+    }
+    #home-collection .slide-collection {
+        min-width: calc(100%);
+        margin-right: 0;
+    }
+    .home-about-content {
+        display: flex;
+
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .btn-more-white1 {
+        margin: 0 30px;
+        text-align: center;
+    }
+    .grid-article {
+        grid-template-columns: 1fr;
+    }
+    #main-slideshow .slick div {
+        color: var(--color-white);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .section-slideshow {
+        grid-auto-columns: 100%;
+    }
+    .slides-item {
+        transform: scale(1);
+    }
+    .padding-btn-slider {
+        padding: 4px 4px;
+    }
+    .article-item-right {
+        grid-template-columns: 1fr;
+    }
+    .collection-main {
+        padding: 0 15px;
+    }
+}
+#tab-home .container {
+    overflow-x: hidden;
 }

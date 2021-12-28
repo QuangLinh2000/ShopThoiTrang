@@ -214,6 +214,7 @@ body {
     position: relative;
     flex-wrap: wrap;
     padding: 0 100px;
+    align-content: center;
 }
 .nav-item {
     padding: 10px 0px;
@@ -318,7 +319,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-#header-mobile .btn-cart {
+#header-mobile .btn-cart-mobile {
     position: relative;
 }
 #header-mobile .cart-count {
@@ -365,7 +366,7 @@ body {
 #header-mobile #icon-close {
     position: absolute;
     padding: 10px;
-    left: 21px;
+    left: 12px;
     top: 10px;
 }
 #header-mobile #icon-close i {
