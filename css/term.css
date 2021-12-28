@@ -55,8 +55,8 @@ table {
     padding: 0 15px;
 }
 .menu__content {
-    position: fixed;
-    width: inherit;
+    position: sticky;
+    width: 100%;
 }
 .menu__bar-title {
     border-left: 8px solid red;

@@ -186,3 +186,7 @@ footer {
         justify-content: center;
     }
 }
+.footer-content-item-title {
+    display: block;
+    /* margin: 0 10px; */
+}
