@@ -56,7 +56,12 @@
   line-height: 45px;
   transition: var(--transition-time) ease;
 }
+.right-contain-item-icon-buy a {
+  width: 100%;
+} 
 .right-contain-item-icon-buy p {
+  color: #fff;
+  cursor: pointer;
   width: 100%;
 }
 .right-contain-item-icon-search {
@@ -75,7 +80,9 @@
   height: 25px;
   margin: auto;
 }
+
 .right-contain-item-icon-basket {
+  cursor: pointer;
   position: absolute;
   width: 0px;
   height: 45px;
