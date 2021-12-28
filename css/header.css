@@ -416,4 +416,7 @@ body {
     #header-mobile {
         display: block;
     }
+    .margin-top-mobile {
+        margin-top: 80px;
+    }
 }

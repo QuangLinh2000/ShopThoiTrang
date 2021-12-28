@@ -150,3 +150,6 @@ table {
         margin-top: 2em;
     }
 }
+.nav-bar .nav-list {
+    margin-bottom: 0;
+}
