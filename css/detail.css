@@ -370,6 +370,9 @@ li {
     transition: 0.5s;
     transform-origin: left;
 }
+.buy-now a{
+display: block;
+}
 .buy-now {
     margin-bottom: 2.1875em;
 }
