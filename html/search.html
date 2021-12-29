@@ -17,36 +17,287 @@
 
 </head>
 <body>
-    <header id="header">
-        <div id="header-first">
-            <div class="container">
-                <div class="header-top">
-                    <div class="header-search" id="input-group-header">
-                        <input id="searchtext" onkeyup="" name="q" value="" maxlength="40" class="input-search" type="text"
-                            size="20" placeholder="Tìm kiếm ...." autocomplete="off">
-                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+<header id="header">
+    <div id="header-first">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-search" id="input-group-header">
+                    <input id="searchtext" onkeyup="" name="q" value="" maxlength="40" class="input-search" type="text"
+                           size="20" placeholder="Tìm kiếm ...." autocomplete="off">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+                <div class="header-top-wrap-logo">
+                    <h1>
+                        <a href="./home.html"><img src="../img/logo.png"
+                                                   alt="Thời trang công sở Seven.AM: Váy đầm, quần áo, vest nữ"></a>
+                    </h1>
+                </div>
+                <div class="header-top-list">
+                    <div>
+                        <a href="./cart.html">
+                            <i class="fa-solid fa-cart-shopping icon-header"></i>
+                            Giỏ hàng(<span class="cart-count color-red">0</span>)
+                        </a>
                     </div>
-                    <div class="header-top-wrap-logo">
-                        <h1>
-                            <a href="./home.html"><img src="../img/logo.png"
-                                    alt="Thời trang công sở Seven.AM: Váy đầm, quần áo, vest nữ"></a>
-                        </h1>
+                    <div class="btn-signup">
+                        <a href="./signinvssignup.html" id="login-a" class="color-red">Đăng nhập </a>
+                        <a href="./signinvssignup.html">/ Đăng ký</a>
                     </div>
-                    <div class="header-top-list">
-                        <div>
-                            <a href="./cart.html">
-                                <i class="fa-solid fa-cart-shopping icon-header"></i>
-                                Giỏ hàng(<span class="cart-count color-red">0</span>)
-                            </a>
-                        </div>
-                        <div class="btn-signup">
-                            <a href="./signinvssignup.html" id="login-a" class="color-red">Đăng nhập </a>
-                            <a href="./signinvssignup.html">/ Đăng ký</a>
-                        </div>
-                        <div>
-                            <a href="../admin/page-index-1.html">Admin</a>
-                        </div>
+                    <div>
+                        <a href="../admin/page-index-1.html">Admin</a>
                     </div>
+                </div>
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./product.html" class="text-hover text-hover-underline-goes-right">
+                            <span>Hàng mới</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="sub-nav">
+                            <ul class="list-sub">
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">giày</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dép</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dep</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                            </ul>
+                            <div class="sub-nav-left">
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./product.html" class="text-hover text-hover-underline-goes-right">
+                            <span>Đầm</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="sub-nav">
+                            <ul class="list-sub">
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">giày</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dép</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dep</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                            </ul>
+                            <div class="sub-nav-left">
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./product.html" class="text-hover text-hover-underline-goes-right">
+                            <span>Áo</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="sub-nav">
+                            <ul class="list-sub">
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">giày</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dép</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dep</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                            </ul>
+                            <div class="sub-nav-left">
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./product.html" class="text-hover text-hover-underline-goes-right">
+                            <span>Quần</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="sub-nav">
+                            <ul class="list-sub">
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">giày</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dép</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dep</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                            </ul>
+                            <div class="sub-nav-left">
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./product.html" class="text-hover text-hover-underline-goes-right">
+                            <span>Juyp</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="sub-nav">
+                            <ul class="list-sub">
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">giày</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dép</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dep</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                            </ul>
+                            <div class="sub-nav-left">
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./product.html" class="text-hover text-hover-underline-goes-right">
+                            <span>Jumpsuit</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="sub-nav">
+                            <ul class="list-sub">
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">giày</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dép</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dep</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                            </ul>
+                            <div class="sub-nav-left">
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./product.html" class="text-hover text-hover-underline-goes-right">
+                            <span>Sale</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <div class="sub-nav">
+                            <ul class="list-sub">
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">giày</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dép</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Dep</a>
+                                </li>
+                                <li class="item-sub-nav "><a href="./product.html"
+                                                             class="text-hover text-hover-underline-goes-right">Quần
+                                    áo</a></li>
+                            </ul>
+                            <div class="sub-nav-left">
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                                <div class="sub-nav-img">
+                                    <img src="../img/subimgtem1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="header-scroll">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-top-wrap-logo">
+                    <h1>
+                        <a href="./home.html"><img src="../img/logo.png"
+                                                   alt="Thời trang công sở Seven.AM: Váy đầm, quần áo, vest nữ"></a>
+                    </h1>
                 </div>
                 <nav class="nav-bar">
                     <ul class="nav-list">
@@ -58,20 +309,22 @@
                             <div class="sub-nav">
                                 <ul class="list-sub">
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">giày</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">giày</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dép</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dép</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dep</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dep</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                 </ul>
                                 <div class="sub-nav-left">
-                                    <div class="sub-nav-img">
-                                        <img src="../img/subimgtem1.jpg" alt="">
-                                    </div>
                                     <div class="sub-nav-img">
                                         <img src="../img/subimgtem1.jpg" alt="">
                                     </div>
@@ -89,15 +342,20 @@
                             <div class="sub-nav">
                                 <ul class="list-sub">
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">giày</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">giày</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dép</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dép</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dep</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dep</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                 </ul>
                                 <div class="sub-nav-left">
                                     <div class="sub-nav-img">
@@ -117,15 +375,20 @@
                             <div class="sub-nav">
                                 <ul class="list-sub">
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">giày</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">giày</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dép</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dép</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dep</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dep</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                 </ul>
                                 <div class="sub-nav-left">
                                     <div class="sub-nav-img">
@@ -145,15 +408,20 @@
                             <div class="sub-nav">
                                 <ul class="list-sub">
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">giày</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">giày</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dép</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dép</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dep</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dep</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                 </ul>
                                 <div class="sub-nav-left">
                                     <div class="sub-nav-img">
@@ -173,15 +441,20 @@
                             <div class="sub-nav">
                                 <ul class="list-sub">
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">giày</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">giày</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dép</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dép</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dep</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dep</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                 </ul>
                                 <div class="sub-nav-left">
                                     <div class="sub-nav-img">
@@ -201,15 +474,20 @@
                             <div class="sub-nav">
                                 <ul class="list-sub">
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">giày</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">giày</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dép</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dép</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dep</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dep</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                 </ul>
                                 <div class="sub-nav-left">
                                     <div class="sub-nav-img">
@@ -229,15 +507,20 @@
                             <div class="sub-nav">
                                 <ul class="list-sub">
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">giày</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">giày</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dép</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dép</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Dep</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Dep</a>
+                                    </li>
                                     <li class="item-sub-nav "><a href="./product.html"
-                                            class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
+                                                                 class="text-hover text-hover-underline-goes-right">Quần
+                                        áo</a></li>
                                 </ul>
                                 <div class="sub-nav-left">
                                     <div class="sub-nav-img">
@@ -249,864 +532,662 @@
                                 </div>
                             </div>
                         </li>
-
                     </ul>
                 </nav>
+                <div class="header-top-list">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </div>
+                    <div>
+                        <a href="./cart.html">
+                            <i class="fa-solid fa-cart-shopping icon-header"></i>
+                            Giỏ hàng(<span class="cart-count color-red">0</span>)
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <div id="header-mobile">
+        <div class="container">
+            <div class="header-top">
+                <div id="btn-bar-header">
+                    <i class="fa-solid fa-bars-staggered icon-header icon-nav "></i>
 
-        <div id="header-scroll">
-            <div class="container">
-                <div class="header-top">
-                    <div class="header-top-wrap-logo">
-                        <h1>
-                            <a href="./home.html"><img src="../img/logo.png"
-                                    alt="Thời trang công sở Seven.AM: Váy đầm, quần áo, vest nữ"></a>
-                        </h1>
+                </div>
+                <div class="header-top-wrap-logo">
+                    <h1>
+                        <a href="./home.html"><img src="../img/logo.png"
+                                                   alt="Thời trang công sở Seven.AM: Váy đầm, quần áo, vest nữ"></a>
+                    </h1>
+                </div>
+                <nav class="nav-bar" id="nav-bar-active">
+                    <div id="icon-close">
+                        <i class="fa-solid fa-xmark icon-nav"></i>
                     </div>
-                    <nav class="nav-bar">
-                        <ul class="nav-list">
-                            <li class="nav-item">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <div class="nav-item-warper">
                                 <a href="./product.html" class="text-hover text-hover-underline-goes-right">
-                                    <span>Hàng mới</span>
-                                    <i class="fa-solid fa-angle-down"></i>
+                                    <span>Trang chủ</span>
                                 </a>
-                                <div class="sub-nav">
-                                    <ul class="list-sub">
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">giày</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dép</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dep</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                    </ul>
-                                    <div class="sub-nav-left">
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-item-warper">
+                                <a href="./product.html" class="text-hover text-hover-underline-goes-right">
+                                    <span>Sản phẩm mới nhất</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-item-warper">
                                 <a href="./product.html" class="text-hover text-hover-underline-goes-right">
                                     <span>Đầm</span>
-                                    <i class="fa-solid fa-angle-down"></i>
                                 </a>
-                                <div class="sub-nav">
-                                    <ul class="list-sub">
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">giày</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dép</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dep</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                    </ul>
-                                    <div class="sub-nav-left">
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./product.html" class="text-hover text-hover-underline-goes-right">
-                                    <span>Áo</span>
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </a>
-                                <div class="sub-nav">
-                                    <ul class="list-sub">
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">giày</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dép</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dep</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                    </ul>
-                                    <div class="sub-nav-left">
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-item-warper">
                                 <a href="./product.html" class="text-hover text-hover-underline-goes-right">
                                     <span>Quần</span>
-                                    <i class="fa-solid fa-angle-down"></i>
                                 </a>
-                                <div class="sub-nav">
-                                    <ul class="list-sub">
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">giày</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dép</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dep</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                    </ul>
-                                    <div class="sub-nav-left">
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-item-warper">
                                 <a href="./product.html" class="text-hover text-hover-underline-goes-right">
                                     <span>Juyp</span>
-                                    <i class="fa-solid fa-angle-down"></i>
                                 </a>
-                                <div class="sub-nav">
-                                    <ul class="list-sub">
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">giày</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dép</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dep</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                    </ul>
-                                    <div class="sub-nav-left">
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./product.html" class="text-hover text-hover-underline-goes-right">
-                                    <span>Jumpsuit</span>
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </a>
-                                <div class="sub-nav">
-                                    <ul class="list-sub">
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">giày</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dép</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dep</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                    </ul>
-                                    <div class="sub-nav-left">
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-item-warper">
                                 <a href="./product.html" class="text-hover text-hover-underline-goes-right">
                                     <span>Sale</span>
-                                    <i class="fa-solid fa-angle-down"></i>
                                 </a>
-                                <div class="sub-nav">
-                                    <ul class="list-sub">
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">giày</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dép</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Dep</a></li>
-                                        <li class="item-sub-nav "><a href="./product.html"
-                                                class="text-hover text-hover-underline-goes-right">Quần áo</a></li>
-                                    </ul>
-                                    <div class="sub-nav-left">
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                        <div class="sub-nav-img">
-                                            <img src="../img/subimgtem1.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header-top-list">
-                        <div>
-                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-item-warper">
+                                <a href="./product.html" class="text-hover text-hover-underline-goes-right">
+                                    <span>Bộ sưu tập</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-item-warper">
+                                <a href="./product.html" class="text-hover text-hover-underline-goes-right">
+                                    <span>Tài khoản</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-item-warper">
+                                <a href="./product.html" class="text-hover text-hover-underline-goes-right">
+                                    <span>Đăng nhập/Đăng ký</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-top-list">
+
+                    <div>
+                        <a href="./cart.html" class="btn-cart-mobile">
+                            <i class="fa-solid fa-cart-shopping icon-header"></i>
+                            <span class="cart-count color-red">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<a href="#" class="scrollup show-scroll" id="scroll-up">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+<section id="main-search" class="margin-top-mobile">
+    <div class="container">
+        <div class="top-search-title">
+            <h2 class="text-search">Áo</h2>
+            <span class="title-sum-product">415949 sản phẩm</span>
+        </div>
+        <div class="contain">
+            <div class="left-contain">
+                <div class="left-contain-price-range">
+                    <p class="left-contain-item-title">Khoảng Giá</p>
+                    <div class="left-contain-item-box-content">
+                        <input type="radio" name="all" value="Tất Cả">
+                        <label for="all"> Tất Cả</label><br>
+                        <input type="radio" name="all" value="Tất Cả">
+                        <label for="all"> Nhỏ hơn 300,000₫</label><br>
+                        <input type="radio" name="all" value="Tất Cả">
+                        <label for="all">Từ 300,000₫ - 500,000₫</label><br>
+                        <input type="radio" name="all" value="Tất Cả">
+                        <label for="all"> Từ 500,000₫ - 700,000₫</label><br>
+                        <input type="radio" name="all" value="Tất Cả">
+                        <label for="all"> Từ 700,000₫ - 1,000,000₫</label><br>
+                        <input type="radio" name="all" value="Tất Cả">
+                        <label for="all"> Từ 1,000,000₫ - 1,500,000₫</label><br>
+                        <input type="radio" name="all" value="Tất Cả">
+                        <label for="all"> Lớn hơn 1,500,000₫</label><br>
+                    </div>
+                </div>
+                <div class="left-contain-size">
+                    <p class="left-contain-item-title">Kích Thước</p>
+                    <div class="left-contain-item-box-content-size">
+                        <div class="left-contain-item-box-content-size-item">
+                            <input type="checkbox" name="size" value="S">
+                            <label for="size">S</label><br>
                         </div>
-                        <div>
-                            <a href="./cart.html">
-                                <i class="fa-solid fa-cart-shopping icon-header"></i>
-                                Giỏ hàng(<span class="cart-count color-red">0</span>)
+                        <div class="left-contain-item-box-content-size-item">
+                            <input type="checkbox" name="size" value="M">
+                            <label for="size">M</label><br>
+                        </div>
+                        <div class="left-contain-item-box-content-size-item">
+                            <input type="checkbox" name="size" value="L">
+                            <label for="size">L</label><br>
+                        </div>
+                        <div class="left-contain-item-box-content-size-item">
+                            <input type="checkbox" name="size" value="XL">
+                            <label for="size">XL</label><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-contain-color">
+                    <p class="left-contain-item-title">Màu Sắc</p>
+                    <div class="left-contain-item-box-content-color">
+                        <div class="left-contain-item-box-content-color-item">
+                            <input type="checkbox" name="color" value="white">
+                            <p style="background-color: red;" for="color"></p><br>
+                        </div>
+                        <div class="left-contain-item-box-content-color-item">
+                            <input type="checkbox" name="color" value="white">
+                            <p style="background-color: yellow;" for="color"></p><br>
+                        </div>
+                        <div class="left-contain-item-box-content-color-item">
+                            <input type="checkbox" name="color" value="white">
+                            <p style="background-color: black;" for="color"></p><br>
+                        </div>
+                        <div class="left-contain-item-box-content-color-item">
+                            <input type="checkbox" name="color" value="white">
+                            <p style="background-color: greenyellow;" for="color"></p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-contain">
+                <div class="list-tab-content">
+                    <div class="slide-collection">
+                        <div class="collection-slide-div">
+                            <a href="./detail.html">
+                                <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
                             </a>
+                            <div class="btn-img">
+                                <div class="btn-img-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="btn-img-buy">
+                                    <a href="./checkouts.html">mua ngay</a>
+                                </div>
+                                <div class="btn-img-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                            <div class="colection-tag">
+                                <div class="tag-saleoff">
+                                    <span>-10%</span>
+                                </div>
+                                <img src="../img/img-sale.png" alt="" class="img-sale">
+                            </div>
+                        </div>
+                        <div class="list-image-hover">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                        </div>
+                        <div class="text-content-collection">
+                            <h3 class="slide-collection-title">
+                                Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng
+                                Thêu Viền Tay
+                            </h3>
+                            <div>
+                                    <span class="slide-collection-price">
+                                        847,000đ
+                                    </span>
+                                <span class="current-price">
+                                        941,000đ
+                                    </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div id="header-mobile">
-            <div class="container">
-                <div class="header-top">
-                    <div id="btn-bar-header">
-                        <i class="fa-solid fa-bars-staggered icon-header icon-nav "></i>
-
-                    </div>
-                    <div class="header-top-wrap-logo">
-                        <h1>
-                            <a href="./home.html"><img src="../img/logo.png"
-                                    alt="Thời trang công sở Seven.AM: Váy đầm, quần áo, vest nữ"></a>
-                        </h1>
-                    </div>
-                    <nav class="nav-bar" id="nav-bar-active">
-                        <div id="icon-close">
-                            <i class="fa-solid fa-xmark icon-nav"></i>
-                        </div>
-                        <ul class="nav-list">
-                            <li class="nav-item">
-                                <div class="nav-item-warper">
-                                    <a href="./product.html" class="text-hover text-hover-underline-goes-right">
-                                        <span>Trang chủ</span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-item-warper">
-                                    <a href="./product.html" class="text-hover text-hover-underline-goes-right">
-                                        <span>Sản phẩm mới nhất</span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-item-warper">
-                                    <a href="./product.html" class="text-hover text-hover-underline-goes-right">
-                                        <span>Đầm</span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-item-warper">
-                                    <a href="./product.html" class="text-hover text-hover-underline-goes-right">
-                                        <span>Quần</span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-item-warper">
-                                    <a href="./product.html" class="text-hover text-hover-underline-goes-right">
-                                        <span>Juyp</span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-item-warper">
-                                    <a href="./product.html" class="text-hover text-hover-underline-goes-right">
-                                        <span>Sale</span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-item-warper">
-                                    <a href="./product.html" class="text-hover text-hover-underline-goes-right">
-                                        <span>Bộ sưu tập</span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-item-warper">
-                                    <a href="./product.html" class="text-hover text-hover-underline-goes-right">
-                                        <span>Tài khoản</span>
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-item-warper">
-                                    <a href="./product.html" class="text-hover text-hover-underline-goes-right">
-                                        <span>Đăng nhập/Đăng ký</span>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="header-top-list">
-
-                        <div>
-                            <a href="./cart.html" class="btn-cart-mobile">
-                                <i class="fa-solid fa-cart-shopping icon-header"></i>
-                                <span class="cart-count color-red">0</span>
+                    <div class="slide-collection">
+                        <div class="collection-slide-div">
+                            <a href="./detail.html">
+                                <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
                             </a>
+                            <div class="btn-img">
+                                <div class="btn-img-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="btn-img-buy">
+                                    <a href="./checkouts.html">mua ngay</a>
+                                </div>
+                                <div class="btn-img-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                            <div class="colection-tag">
+                                <div class="tag-saleoff">
+                                    <span>-10%</span>
+                                </div>
+                                <img src="../img/img-sale.png" alt="" class="img-sale">
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <a href="#" class="scrollup show-scroll" id="scroll-up">
-        <i class="fa-solid fa-arrow-up"></i>
-    </a>
-    <section id="main-search" class="margin-top-mobile">
-        <div class="container">
-            <div class="top-search-title">
-                <h2 class="text-search">Áo</h2>
-                <span class="title-sum-product">415949 sản phẩm</span>
-            </div>
-            <div class="contain">
-                <div class="left-contain">
-                    <div class="left-contain-price-range">
-                        <p class="left-contain-item-title">Khoảng Giá</p>
-                        <div class="left-contain-item-box-content">
-                            <input type="radio" name="all" value="Tất Cả">
-                            <label for="all"> Tất Cả</label><br>
-                            <input type="radio" name="all" value="Tất Cả">
-                            <label for="all"> Nhỏ hơn 300,000₫</label><br>
-                            <input type="radio" name="all" value="Tất Cả">
-                            <label for="all">Từ 300,000₫ - 500,000₫</label><br>
-                            <input type="radio" name="all" value="Tất Cả">
-                            <label for="all"> Từ 500,000₫ - 700,000₫</label><br>
-                            <input type="radio" name="all" value="Tất Cả">
-                            <label for="all"> Từ 700,000₫ - 1,000,000₫</label><br>
-                            <input type="radio" name="all" value="Tất Cả">
-                            <label for="all"> Từ 1,000,000₫ - 1,500,000₫</label><br>
-                            <input type="radio" name="all" value="Tất Cả">
-                            <label for="all">  Lớn hơn 1,500,000₫</label><br>
+                        <div class="list-image-hover">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
                         </div>
-                    </div>
-                    <div class="left-contain-size">
-                        <p class="left-contain-item-title">Kích Thước</p>
-                        <div class="left-contain-item-box-content-size">
-                            <div class="left-contain-item-box-content-size-item">
-                                <input type="checkbox" name="size" value="S">
-                                <label for="size">S</label><br>
-                            </div>
-                            <div class="left-contain-item-box-content-size-item">
-                                <input type="checkbox" name="size" value="M">
-                                <label for="size">M</label><br>
-                            </div>
-                            <div class="left-contain-item-box-content-size-item">
-                                <input type="checkbox" name="size" value="L">
-                                <label for="size">L</label><br>
-                            </div>
-                            <div class="left-contain-item-box-content-size-item">
-                                <input type="checkbox" name="size" value="XL">
-                                <label for="size">XL</label><br>
+                        <div class="text-content-collection">
+                            <h3 class="slide-collection-title">
+                                Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng
+                                Thêu Viền Tay
+                            </h3>
+                            <div>
+                                    <span class="slide-collection-price">
+                                        847,000đ
+                                    </span>
+                                <span class="current-price">
+                                        941,000đ
+                                    </span>
                             </div>
                         </div>
                     </div>
-                    <div class="left-contain-color">
-                        <p class="left-contain-item-title">Màu Sắc</p>
-                        <div class="left-contain-item-box-content-color">
-                            <div class="left-contain-item-box-content-color-item">
-                                <input type="checkbox" name="color" value="white">
-                                <p style="background-color: red;" for="color"></p><br>
+                    <div class="slide-collection">
+                        <div class="collection-slide-div">
+                            <a href="./detail.html">
+                                <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </a>
+                            <div class="btn-img">
+                                <div class="btn-img-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="btn-img-buy">
+                                    <a href="./checkouts.html">mua ngay</a>
+                                </div>
+                                <div class="btn-img-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
                             </div>
-                            <div class="left-contain-item-box-content-color-item">
-                                <input type="checkbox" name="color" value="white">
-                                <p style="background-color: yellow;" for="color"></p><br>
+                            <div class="colection-tag">
+                                <div class="tag-saleoff">
+                                    <span>-10%</span>
+                                </div>
+                                <img src="../img/img-sale.png" alt="" class="img-sale">
                             </div>
-                            <div class="left-contain-item-box-content-color-item">
-                                <input type="checkbox" name="color" value="white">
-                                <p style="background-color: black;" for="color"></p><br>
-                            </div>
-                            <div class="left-contain-item-box-content-color-item">
-                                <input type="checkbox" name="color" value="white">
-                                <p style="background-color: greenyellow;" for="color"></p><br>
+                        </div>
+                        <div class="list-image-hover">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                        </div>
+                        <div class="text-content-collection">
+                            <h3 class="slide-collection-title">
+                                Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng
+                                Thêu Viền Tay
+                            </h3>
+                            <div>
+                                    <span class="slide-collection-price">
+                                        847,000đ
+                                    </span>
+                                <span class="current-price">
+                                        941,000đ
+                                    </span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="right-contain">
-                    <div class="list-tab-content">
-                        <div class="slide-collection">
-                            <div class="collection-slide-div">
-                                <a href="./detail.html">
-                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
-                                </a>
-                                <div class="btn-img">
-                                    <div class="btn-img-search">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
-                                    <div class="btn-img-buy">
-                                        <a href="./checkouts.html">mua ngay</a>
-                                    </div>
-                                    <div class="btn-img-cart">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
+                    <div class="slide-collection">
+                        <div class="collection-slide-div">
+                            <a href="./detail.html">
+                                <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </a>
+                            <div class="btn-img">
+                                <div class="btn-img-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
-                                <div class="colection-tag">
-                                    <div class="tag-saleoff">
-                                        <span>-10%</span>
-                                    </div>
-                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                <div class="btn-img-buy">
+                                    <a href="./checkouts.html">mua ngay</a>
+                                </div>
+                                <div class="btn-img-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
                                 </div>
                             </div>
-                            <div class="list-image-hover">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <div class="colection-tag">
+                                <div class="tag-saleoff">
+                                    <span>-10%</span>
+                                </div>
+                                <img src="../img/img-sale.png" alt="" class="img-sale">
                             </div>
-                            <div class="text-content-collection">
-                                <h3 class="slide-collection-title">
-                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
-                                </h3>
-                                <div>
+                        </div>
+                        <div class="list-image-hover">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                        </div>
+                        <div class="text-content-collection">
+                            <h3 class="slide-collection-title">
+                                Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng
+                                Thêu Viền Tay
+                            </h3>
+                            <div>
                                     <span class="slide-collection-price">
                                         847,000đ
                                     </span>
-                                    <span class="current-price">
+                                <span class="current-price">
                                         941,000đ
                                     </span>
-                                </div>
                             </div>
                         </div>
-                        <div class="slide-collection">
-                            <div class="collection-slide-div">
-                                <a href="./detail.html">
-                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
-                                </a>
-                                <div class="btn-img">
-                                    <div class="btn-img-search">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
-                                    <div class="btn-img-buy">
-                                        <a href="./checkouts.html">mua ngay</a>
-                                    </div>
-                                    <div class="btn-img-cart">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
+                    </div>
+                    <div class="slide-collection">
+                        <div class="collection-slide-div">
+                            <a href="./detail.html">
+                                <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </a>
+                            <div class="btn-img">
+                                <div class="btn-img-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
-                                <div class="colection-tag">
-                                    <div class="tag-saleoff">
-                                        <span>-10%</span>
-                                    </div>
-                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                <div class="btn-img-buy">
+                                    <a href="./checkouts.html">mua ngay</a>
+                                </div>
+                                <div class="btn-img-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
                                 </div>
                             </div>
-                            <div class="list-image-hover">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <div class="colection-tag">
+                                <div class="tag-saleoff">
+                                    <span>-10%</span>
+                                </div>
+                                <img src="../img/img-sale.png" alt="" class="img-sale">
                             </div>
-                            <div class="text-content-collection">
-                                <h3 class="slide-collection-title">
-                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
-                                </h3>
-                                <div>
+                        </div>
+                        <div class="list-image-hover">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                        </div>
+                        <div class="text-content-collection">
+                            <h3 class="slide-collection-title">
+                                Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng
+                                Thêu Viền Tay
+                            </h3>
+                            <div>
                                     <span class="slide-collection-price">
                                         847,000đ
                                     </span>
-                                    <span class="current-price">
+                                <span class="current-price">
                                         941,000đ
                                     </span>
-                                </div>
                             </div>
                         </div>
-                        <div class="slide-collection">
-                            <div class="collection-slide-div">
-                                <a href="./detail.html">
-                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
-                                </a>
-                                <div class="btn-img">
-                                    <div class="btn-img-search">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
-                                    <div class="btn-img-buy">
-                                        <a href="./checkouts.html">mua ngay</a>
-                                    </div>
-                                    <div class="btn-img-cart">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
+                    </div>
+                    <div class="slide-collection">
+                        <div class="collection-slide-div">
+                            <a href="./detail.html">
+                                <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </a>
+                            <div class="btn-img">
+                                <div class="btn-img-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
-                                <div class="colection-tag">
-                                    <div class="tag-saleoff">
-                                        <span>-10%</span>
-                                    </div>
-                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                <div class="btn-img-buy">
+                                    <a href="./checkouts.html">mua ngay</a>
+                                </div>
+                                <div class="btn-img-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
                                 </div>
                             </div>
-                            <div class="list-image-hover">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <div class="colection-tag">
+                                <div class="tag-saleoff">
+                                    <span>-10%</span>
+                                </div>
+                                <img src="../img/img-sale.png" alt="" class="img-sale">
                             </div>
-                            <div class="text-content-collection">
-                                <h3 class="slide-collection-title">
-                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
-                                </h3>
-                                <div>
+                        </div>
+                        <div class="list-image-hover">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                        </div>
+                        <div class="text-content-collection">
+                            <h3 class="slide-collection-title">
+                                Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng
+                                Thêu Viền Tay
+                            </h3>
+                            <div>
                                     <span class="slide-collection-price">
                                         847,000đ
                                     </span>
-                                    <span class="current-price">
+                                <span class="current-price">
                                         941,000đ
                                     </span>
-                                </div>
                             </div>
                         </div>
-                        <div class="slide-collection">
-                            <div class="collection-slide-div">
-                                <a href="./detail.html">
-                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
-                                </a>
-                                <div class="btn-img">
-                                    <div class="btn-img-search">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
-                                    <div class="btn-img-buy">
-                                        <a href="./checkouts.html">mua ngay</a>
-                                    </div>
-                                    <div class="btn-img-cart">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
+                    </div>
+                    <div class="slide-collection">
+                        <div class="collection-slide-div">
+                            <a href="./detail.html">
+                                <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </a>
+                            <div class="btn-img">
+                                <div class="btn-img-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
-                                <div class="colection-tag">
-                                    <div class="tag-saleoff">
-                                        <span>-10%</span>
-                                    </div>
-                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                <div class="btn-img-buy">
+                                    <a href="./checkouts.html">mua ngay</a>
+                                </div>
+                                <div class="btn-img-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
                                 </div>
                             </div>
-                            <div class="list-image-hover">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <div class="colection-tag">
+                                <div class="tag-saleoff">
+                                    <span>-10%</span>
+                                </div>
+                                <img src="../img/img-sale.png" alt="" class="img-sale">
                             </div>
-                            <div class="text-content-collection">
-                                <h3 class="slide-collection-title">
-                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
-                                </h3>
-                                <div>
+                        </div>
+                        <div class="list-image-hover">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                        </div>
+                        <div class="text-content-collection">
+                            <h3 class="slide-collection-title">
+                                Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng
+                                Thêu Viền Tay
+                            </h3>
+                            <div>
                                     <span class="slide-collection-price">
                                         847,000đ
                                     </span>
-                                    <span class="current-price">
+                                <span class="current-price">
                                         941,000đ
                                     </span>
-                                </div>
                             </div>
                         </div>
-                        <div class="slide-collection">
-                            <div class="collection-slide-div">
-                                <a href="./detail.html">
-                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
-                                </a>
-                                <div class="btn-img">
-                                    <div class="btn-img-search">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
-                                    <div class="btn-img-buy">
-                                        <a href="./checkouts.html">mua ngay</a>
-                                    </div>
-                                    <div class="btn-img-cart">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
+                    </div>
+                    <div class="slide-collection">
+                        <div class="collection-slide-div">
+                            <a href="./detail.html">
+                                <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
+                            </a>
+                            <div class="btn-img">
+                                <div class="btn-img-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
-                                <div class="colection-tag">
-                                    <div class="tag-saleoff">
-                                        <span>-10%</span>
-                                    </div>
-                                    <img src="../img/img-sale.png" alt="" class="img-sale">
+                                <div class="btn-img-buy">
+                                    <a href="./checkouts.html">mua ngay</a>
+                                </div>
+                                <div class="btn-img-cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
                                 </div>
                             </div>
-                            <div class="list-image-hover">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <div class="colection-tag">
+                                <div class="tag-saleoff">
+                                    <span>-10%</span>
+                                </div>
+                                <img src="../img/img-sale.png" alt="" class="img-sale">
                             </div>
-                            <div class="text-content-collection">
-                                <h3 class="slide-collection-title">
-                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
-                                </h3>
-                                <div>
+                        </div>
+                        <div class="list-image-hover">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
+                            <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
+                        </div>
+                        <div class="text-content-collection">
+                            <h3 class="slide-collection-title">
+                                Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng
+                                Thêu Viền Tay
+                            </h3>
+                            <div>
                                     <span class="slide-collection-price">
                                         847,000đ
                                     </span>
-                                    <span class="current-price">
+                                <span class="current-price">
                                         941,000đ
                                     </span>
-                                </div>
                             </div>
                         </div>
-                        <div class="slide-collection">
-                            <div class="collection-slide-div">
-                                <a href="./detail.html">
-                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
-                                </a>
-                                <div class="btn-img">
-                                    <div class="btn-img-search">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
-                                    <div class="btn-img-buy">
-                                        <a href="./checkouts.html">mua ngay</a>
-                                    </div>
-                                    <div class="btn-img-cart">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                                <div class="colection-tag">
-                                    <div class="tag-saleoff">
-                                        <span>-10%</span>
-                                    </div>
-                                    <img src="../img/img-sale.png" alt="" class="img-sale">
-                                </div>
-                            </div>
-                            <div class="list-image-hover">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
-                            </div>
-                            <div class="text-content-collection">
-                                <h3 class="slide-collection-title">
-                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
-                                </h3>
-                                <div>
-                                    <span class="slide-collection-price">
-                                        847,000đ
-                                    </span>
-                                    <span class="current-price">
-                                        941,000đ
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-collection">
-                            <div class="collection-slide-div">
-                                <a href="./detail.html">
-                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
-                                </a>
-                                <div class="btn-img">
-                                    <div class="btn-img-search">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
-                                    <div class="btn-img-buy">
-                                        <a href="./checkouts.html">mua ngay</a>
-                                    </div>
-                                    <div class="btn-img-cart">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                                <div class="colection-tag">
-                                    <div class="tag-saleoff">
-                                        <span>-10%</span>
-                                    </div>
-                                    <img src="../img/img-sale.png" alt="" class="img-sale">
-                                </div>
-                            </div>
-                            <div class="list-image-hover">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
-                            </div>
-                            <div class="text-content-collection">
-                                <h3 class="slide-collection-title">
-                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
-                                </h3>
-                                <div>
-                                    <span class="slide-collection-price">
-                                        847,000đ
-                                    </span>
-                                    <span class="current-price">
-                                        941,000đ
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slide-collection">
-                            <div class="collection-slide-div">
-                                <a href="./detail.html">
-                                    <img class="collection-slide-image" src="../img/collection1_slide_product_1.jpg" alt="">
-                                </a>
-                                <div class="btn-img">
-                                    <div class="btn-img-search">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </div>
-                                    <div class="btn-img-buy">
-                                        <a href="./checkouts.html">mua ngay</a>
-                                    </div>
-                                    <div class="btn-img-cart">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                </div>
-                                <div class="colection-tag">
-                                    <div class="tag-saleoff">
-                                        <span>-10%</span>
-                                    </div>
-                                    <img src="../img/img-sale.png" alt="" class="img-sale">
-                                </div>
-                            </div>
-                            <div class="list-image-hover">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_2.jpg" alt="">
-                                <img class="img-item-hov" src="../img/collection1_slide_product_1.jpg" alt="">
-                            </div>
-                            <div class="text-content-collection">
-                                <h3 class="slide-collection-title">
-                                    Áo Ngắn Tay Seven.AM Chất Liệu Vải Thun Kiểu Dáng Thêu Viền Tay &amp; Vải Thun Kiểu Dáng Thêu Viền Tay
-                                </h3>
-                                <div>
-                                    <span class="slide-collection-price">
-                                        847,000đ
-                                    </span>
-                                    <span class="current-price">
-                                        941,000đ
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
 
-                    </div>
-                    <div class="div-btn-tab">
-                        <a href="#" class="btn btn-tab">xem thêm</a>
-                    </div>
+                </div>
+                <div class="div-btn-tab">
+                    <a href="#" class="btn btn-tab">xem thêm</a>
                 </div>
             </div>
         </div>
+    </div>
 
-    </section>
-    <footer>
-        <div id="home-about">
-            <div class="inner">
-                <div class="home-about-content">
-                    <div class="home-about-item">
-                        <div class="home-about-icon">
-                            <i class="fa-solid fa-truck-fast"></i>
-                        </div>
-                        <h3>
-                            Miễn phí giao hàng
-                        </h3>
-                        <span>Áp dụng với hóa đơn từ 800.000 đ</span>
+</section>
+<footer>
+    <div id="home-about">
+        <div class="inner">
+            <div class="home-about-content">
+                <div class="home-about-item">
+                    <div class="home-about-icon">
+                        <i class="fa-solid fa-truck-fast"></i>
                     </div>
-                    <div class="home-about-item">
-                        <div class="home-about-icon">
-                            <i class="fa-solid fa-shirt"></i>
-                        </div>
-                        <h3>
-                            30 ngày đổi sản phẩm
-                        </h3>
-                        <span>Áp dụng với sản phẩm nguyên giá</span>
+                    <h3>
+                        Miễn phí giao hàng
+                    </h3>
+                    <span>Áp dụng với hóa đơn từ 800.000 đ</span>
+                </div>
+                <div class="home-about-item">
+                    <div class="home-about-icon">
+                        <i class="fa-solid fa-shirt"></i>
                     </div>
-                    <div class="home-about-item">
-                        <div class="home-about-icon">
-                            <i class="fa-solid fa-gift"></i>
-                        </div>
-                        <h3>
-                            Ưu đãi hấp dẫn
-                        </h3>
-                        <span>Quyền lợi sinh nhật đặc biệt</span>
+                    <h3>
+                        30 ngày đổi sản phẩm
+                    </h3>
+                    <span>Áp dụng với sản phẩm nguyên giá</span>
+                </div>
+                <div class="home-about-item">
+                    <div class="home-about-icon">
+                        <i class="fa-solid fa-gift"></i>
                     </div>
-                    <div class="home-about-item">
-                        <div class="home-about-icon">
-                            <i class="fa-solid fa-phone-volume"></i>
-                        </div>
-                        <h3>
-                            Hotline
-                        </h3>
-                        <span>Mua hàng Online: 0924.058.888</span>
+                    <h3>
+                        Ưu đãi hấp dẫn
+                    </h3>
+                    <span>Quyền lợi sinh nhật đặc biệt</span>
+                </div>
+                <div class="home-about-item">
+                    <div class="home-about-icon">
+                        <i class="fa-solid fa-phone-volume"></i>
                     </div>
+                    <h3>
+                        Hotline
+                    </h3>
+                    <span>Mua hàng Online: 0924.058.888</span>
                 </div>
             </div>
         </div>
-        <div class="space-white">
+    </div>
+    <div class="space-white">
 
-        </div>
-        <div class="footer-top">
-            <img src="../img/icon/ft-logo.png" >
-        </div>
-        <div class="footer-content">
-            <div class="footer-content-item footer-content-item-contact">
-             <p class="footer-content-item-title">CÔNG TY CỔ PHẦN HBD</p>
-             <div class="footer-content-item-contact-item">
+    </div>
+    <div class="footer-top">
+        <img src="../img/icon/ft-logo.png">
+    </div>
+    <div class="footer-content">
+        <div class="footer-content-item footer-content-item-contact">
+            <p class="footer-content-item-title">CÔNG TY CỔ PHẦN HBD</p>
+            <div class="footer-content-item-contact-item">
                 <i class="fas fa-home"></i>
-                <p > 47 Đường Đinh Điền, Phường Lam Sơn, Thành phố Hưng Yên, Tỉnh Hưng Yên</p>
-             </div>
-             <div class="footer-content-item-contact-item">
+                <p> 47 Đường Đinh Điền, Phường Lam Sơn, Thành phố Hưng Yên, Tỉnh Hưng Yên</p>
+            </div>
+            <div class="footer-content-item-contact-item">
                 <i class="fas fa-phone"></i>
-                <p class="footer-content-item-focuse" >1900 633 694</p><br>
-             </div>
-             <div class="footer-content-item-contact-item">
+                <p class="footer-content-item-focuse">1900 633 694</p><br>
+            </div>
+            <div class="footer-content-item-contact-item">
                 <i class="fas fa-envelope"></i>
                 <p class="footer-content-item-focuse">info@sevenam.vn</p><br>
-             </div>
-             <div class="footer-content-item-contact-item">
+            </div>
+            <div class="footer-content-item-contact-item">
                 <i class="fas fa-map-marker-alt"></i>
                 <p class="footer-content-item-focuse">Hệ thống cửa hàng</p><br>
-             </div>
-             <div class="footer-content-item-contact-item">
+            </div>
+            <div class="footer-content-item-contact-item">
                 <i class="fab fa-facebook"></i>
                 <p class="footer-content-item-focuse">facebook</p>
-             </div>
+            </div>
 
+        </div>
+        <div class="footer-content-item">
+            <a href="../html/term.html" class="footer-content-item-title">CHÍNH SÁCH</a>
+            <a href="../html/term1.html" class="footer-content-item-focuse">Điều khoản sử dụng</a><br>
+            <a href="../html/term2.html" class="footer-content-item-focuse">Hướng dẫn thanh toán</a><br>
+            <a href="../html/term3.html" class="footer-content-item-focuse">Hướng dẫn mua hàng</a><br>
+            <a href="../html/term4.html" class="footer-content-item-focuse">Chính sách vận chuyển</a><br>
+            <a href="../html/term5.html" class="footer-content-item-focuse">Chính sách đổi trả</a><br>
+            <a href="../html/term6.html" class="footer-content-item-focuse">Chính sách bán hàng và bảo hành</a><br>
+            <a href="../html/term7.html" class="footer-content-item-focuse">Chính sách bảo vệ thông tin khách
+                hàng</a><br>
+            <a href="../html/term8.html" class="footer-content-item-focuse">Quyền lợi sinh nhật của khách hàng</a>
+        </div>
+        <div class="footer-content-item">
+            <p class="footer-content-item-title">VỀ SEVEN.AM</p>
+            <p class="footer-content-item-focuse">Giới thiệu</p><br>
+            <p class="footer-content-item-focuse">Tin tức</p><br>
+            <p class="footer-content-item-focuse">Tuyển dụng</p><br>
+            <p class="footer-content-item-focuse">Liên hệ</p><br>
+            <p class="footer-content-item-focuse">Hợp tác kinh doanh</p><br>
+        </div>
+        <div class="footer-content-item footer-content-item-rigeter">
+            <p class="footer-content-item-title">ĐĂNG KÝ NHẬN TIN</p>
+            <p>Hãy đăng ký nhận tin để nhận được những thông tin hữu ích và những chương trình khuyến mãi hấp dẫn của
+                Seven.AM!</p>
+            <div class="footer-content-item-input">
+                <input id="footer-content-item-input-email" style="border: none;" type="text"
+                       placeholder="Email quý khách">
+                <i class="far fa-paper-plane"></i>
             </div>
-            <div class="footer-content-item">
-                <a href="../html/term.html" class="footer-content-item-title">CHÍNH SÁCH</a>
-                <a href="../html/term1.html" class="footer-content-item-focuse">Điều khoản sử dụng</a><br>
-                <a href="../html/term2.html" class="footer-content-item-focuse">Hướng dẫn thanh toán</a><br>
-                <a href="../html/term3.html" class="footer-content-item-focuse">Hướng dẫn mua hàng</a><br>
-                <a href="../html/term4.html" class="footer-content-item-focuse">Chính sách vận chuyển</a><br>
-                <a href="../html/term5.html" class="footer-content-item-focuse">Chính sách đổi trả</a><br>
-                <a href="../html/term6.html" class="footer-content-item-focuse">Chính sách bán hàng và bảo hành</a><br>
-                <a href="../html/term7.html" class="footer-content-item-focuse">Chính sách bảo vệ thông tin khách hàng</a><br>
-                <a href="../html/term8.html" class="footer-content-item-focuse">Quyền lợi sinh nhật của khách hàng</a>
-            </div>
-            <div class="footer-content-item">
-                 <p class="footer-content-item-title">VỀ SEVEN.AM</p>
-                 <p class="footer-content-item-focuse">Giới thiệu</p><br>
-                 <p class="footer-content-item-focuse">Tin tức</p><br>
-                 <p class="footer-content-item-focuse">Tuyển dụng</p><br>
-                 <p class="footer-content-item-focuse">Liên hệ</p><br>
-                 <p class="footer-content-item-focuse">Hợp tác kinh doanh</p><br>
-            </div>
-            <div class="footer-content-item footer-content-item-rigeter">
-             <p class="footer-content-item-title">ĐĂNG KÝ NHẬN TIN</p>
-             <p>Hãy đăng ký nhận tin để nhận được những thông tin hữu ích và những chương trình khuyến mãi hấp dẫn của Seven.AM!</p>
-              <div class="footer-content-item-input">
-                  <input id="footer-content-item-input-email" style="border: none;" type="text" placeholder="Email quý khách">
-                  <i class="far fa-paper-plane"></i>
-              </div>
-              <div class="footer-content-item-image">
-                <img src="../img/footer/imge-footer.jpg" >
-              </div>
+            <div class="footer-content-item-image">
+                <img src="../img/footer/imge-footer.jpg">
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>CÔNG TY CỔ PHẦN HBD - MST: 0901072722 - Ngày cấp: 03/02/2020 - Nơi cấp: Sở Kế hoạch và Đầu tư tỉnh Hưng Yên
-            </p>
-        </div>
-    </footer>
-    <script src="../script/header.js"></script>
-    <script src="../script/search.js"></script>
+    </div>
+    <div class="footer-bottom">
+        <p>CÔNG TY CỔ PHẦN HBD - MST: 0901072722 - Ngày cấp: 03/02/2020 - Nơi cấp: Sở Kế hoạch và Đầu tư tỉnh Hưng Yên
+        </p>
+    </div>
+</footer>
+<script src="../script/header.js"></script>
+<script src="../script/search.js"></script>
 
 
 </body>

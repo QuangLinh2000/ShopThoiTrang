@@ -1,5 +1,6 @@
 //  slide show
 var slideIndex = 1;
+
 function plusDivs(n) {
     showDivs((slideIndex += n));
 }
@@ -7,6 +8,7 @@ function plusDivs(n) {
 function currentDiv(n) {
     showDivs((slideIndex = n));
 }
+
 showDivs(slideIndex);
 
 function showDivs(n) {
@@ -31,6 +33,7 @@ function showDivs(n) {
         dots[slideIndex - 1].className += " active";
     }
 }
+
 window.onload = function (e) {
     setInterval(() => {
         showDivs(slideIndex++);
@@ -109,6 +112,7 @@ slickPrev.addEventListener("click", () => {
     showSlide(--indexSlider);
 });
 showSlide(1);
+
 function showSlide(n) {
     let isResponsive600 = window.innerWidth < 600 || screen.width < 600;
     if (!isResponsive600 && indexSlider > listSlider.length - 2) {

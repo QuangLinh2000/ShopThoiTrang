@@ -14,6 +14,7 @@ function scrollHideNav() {
         header.classList.remove("header-scroll-active");
     }
 }
+
 //===============================Scroll-top ======================
 function scrollUp() {
     const scrollUp = document.getElementById("scroll-up");
@@ -23,6 +24,7 @@ function scrollUp() {
         else scrollUp.classList.remove("show-scroll");
     }
 }
+
 window.addEventListener("scroll", scrollUp);
 //==================================header mobile=====================
 const btnOpenBar = document.getElementById("btn-bar-header");
